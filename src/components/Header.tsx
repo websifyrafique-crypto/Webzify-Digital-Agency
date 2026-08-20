@@ -27,10 +27,10 @@ export function Header() {
       name: 'Our Services', 
       path: '/services',
       subLinks: [
-        { name: 'Website Designing', path: '/services/web-design' },
-        { name: 'E-Commerce Website', path: '/services/ecommerce' },
-        { name: 'Website Development', path: '/services/web-development' },
-        { name: 'SEO Services', path: '/services/seo' },
+        { name: 'Website Designing', path: '/services/website-designing' },
+        { name: 'E-Commerce Website', path: '/services/e-commerce-website' },
+        { name: 'Website Development', path: '/services/website-development' },
+        { name: 'SEO Services', path: '/services/seo-services' },
       ]
     },
     { name: 'Blog', path: '/blog' },
