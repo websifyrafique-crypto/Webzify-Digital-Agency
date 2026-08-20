@@ -100,7 +100,7 @@ export function Home() {
       </section>
 
       {/* Trust / Value Section */}
-      <section className="py-24 bg-blue-100">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4">Digital Solutions Designed Around Your Business</h2>
@@ -134,7 +134,7 @@ export function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-24 bg-blue-50">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="mb-16 md:flex md:items-end md:justify-between">
             <div className="max-w-2xl">
@@ -182,7 +182,7 @@ export function Home() {
       </section>
 
       {/* About Preview Section */}
-      <section className="py-24 bg-blue-100 overflow-hidden">
+      <section className="py-24 bg-white overflow-hidden">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -238,11 +238,11 @@ export function Home() {
       </section>
 
       {/* Portfolio / Showcase Section */}
-      <section className="py-24 bg-blue-600 text-white border-t border-white/10">
+      <section className="py-24 bg-white border-t border-slate-100">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Webzify Project Showcase</h2>
-            <p className="text-lg text-gray-400">Explore sample layouts and architectural capabilities demonstrating our approach to modern web development and design.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4">Webzify Project Showcase</h2>
+            <p className="text-lg text-gray-600">Explore sample layouts and architectural capabilities demonstrating our approach to modern web development and design.</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -260,7 +260,7 @@ export function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="group relative rounded-2xl overflow-hidden bg-white/5 border border-white/10"
+                className="group relative rounded-2xl overflow-hidden bg-white border border-blue-100 shadow-sm hover:shadow-lg transition-shadow"
               >
                 <div className="aspect-[4/3] overflow-hidden relative">
                   <img 
@@ -268,11 +268,11 @@ export function Home() {
                     alt={item.title} 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-blue-900/40 group-hover:bg-transparent transition-colors duration-500" />
+                  <div className="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-colors duration-500" />
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-navy-900 to-transparent">
-                  <p className="text-sky-400 text-sm font-semibold mb-1">{item.category}</p>
-                  <h3 className="text-xl font-bold text-white">{item.title}</h3>
+                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-white via-white to-transparent">
+                  <p className="text-blue-600 text-sm font-semibold mb-1">{item.category}</p>
+                  <h3 className="text-xl font-bold text-blue-950">{item.title}</h3>
                 </div>
               </motion.div>
             ))}
@@ -290,7 +290,7 @@ export function Home() {
       </section>
 
       {/* Process Section */}
-      <section className="py-24 bg-blue-100 border-y border-slate-200">
+      <section className="py-24 bg-white border-y border-slate-200">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4">How We Work</h2>
@@ -330,7 +330,7 @@ export function Home() {
       <Testimonials />
 
       {/* Latest Insights / Blog Section */}
-      <section className="py-24 bg-blue-50 border-t border-slate-100">
+      <section className="py-24 bg-white border-t border-slate-100">
         <div className="container mx-auto px-4 md:px-6">
           <div className="mb-16 md:flex md:items-end md:justify-between">
             <div className="max-w-2xl">

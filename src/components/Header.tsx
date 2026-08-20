@@ -42,8 +42,8 @@ export function Header() {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         isScrolled
-          ? 'bg-blue-50/90 backdrop-blur-md shadow-sm py-4'
-          : 'bg-blue-50 py-6'
+          ? 'bg-white/90 backdrop-blur-md shadow-sm py-4'
+          : 'bg-white py-6'
       )}
     >
       <div className="container mx-auto px-4 md:px-6">
@@ -69,7 +69,7 @@ export function Header() {
                     {link.name}
                     <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
                   </NavLink>
-                  <div className="absolute left-0 top-full hidden group-hover:block w-56 bg-blue-50 shadow-xl border border-gray-100 rounded-md py-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="absolute left-0 top-full hidden group-hover:block w-56 bg-white shadow-xl border border-gray-100 rounded-md py-2 opacity-0 group-hover:opacity-100 transition-opacity">
                     {link.subLinks.map((subLink) => (
                       <Link
                         key={subLink.name}
@@ -120,7 +120,7 @@ export function Header() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-blue-50 border-t shadow-lg py-4 px-4 flex flex-col gap-4 max-h-[80vh] overflow-y-auto">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white border-t shadow-lg py-4 px-4 flex flex-col gap-4 max-h-[80vh] overflow-y-auto">
           {navLinks.map((link) => (
             link.subLinks ? (
               <div key={link.name} className="flex flex-col">

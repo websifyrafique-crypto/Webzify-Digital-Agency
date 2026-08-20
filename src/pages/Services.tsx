@@ -39,7 +39,7 @@ export function Services() {
       </section>
 
       {/* Services List */}
-      <section className="py-24 bg-blue-50">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="space-y-24">
             {services.map((service, index) => (

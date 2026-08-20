@@ -46,7 +46,7 @@ export function Ecommerce() {
       />
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-gray-900 text-white overflow-hidden">
+      <section className="relative py-20 bg-white text-gray-900 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
@@ -70,7 +70,7 @@ export function Ecommerce() {
       </section>
 
       {/* Content Section */}
-      <section className="py-20 bg-blue-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -110,7 +110,7 @@ export function Ecommerce() {
       </section>
 
       {/* Features Grid */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Core E-Commerce Features</h2>

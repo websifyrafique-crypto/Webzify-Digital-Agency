@@ -47,7 +47,7 @@ export function Contact() {
       </section>
 
       {/* Contact Content */}
-      <section className="py-24 bg-blue-50 relative">
+      <section className="py-24 bg-white relative">
         <div className="absolute top-0 left-0 w-full h-1/2 bg-blue-900" />
         
         <div className="container mx-auto px-4 md:px-6 relative z-10">

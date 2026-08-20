@@ -37,7 +37,7 @@ export function About() {
       </section>
 
       {/* Our Story & Mission */}
-      <section className="py-24 bg-blue-50">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -78,7 +78,7 @@ export function About() {
       </section>
 
       {/* What We Believe / Approach */}
-      <section className="py-24 bg-blue-50 border-y border-slate-200">
+      <section className="py-24 bg-white border-y border-slate-200">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl font-bold text-blue-950 mb-4">Our Approach & Beliefs</h2>
@@ -111,7 +111,7 @@ export function About() {
       </section>
 
       {/* Why Businesses Need Us */}
-      <section className="py-24 bg-blue-50">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4 md:px-6 max-w-5xl">
           <h2 className="text-3xl font-bold text-blue-950 mb-8 text-center">Why Businesses Need a Strong Digital Presence</h2>
           <div className="bg-blue-50 rounded-2xl p-8 md:p-12 border border-slate-100">

@@ -53,7 +53,7 @@ export function ServiceDetail() {
       </section>
 
       {/* Main Content */}
-      <section className="py-24 bg-blue-50">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
             
