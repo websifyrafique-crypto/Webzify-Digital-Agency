@@ -55,7 +55,7 @@ export function WebDesign() {
               animate={{ opacity: 1, y: 0 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
             >
-              Professional <span className="text-primary-600">Website Designing</span> Services
+              Professional <span className="text-purple-600">Website Designing</span> Services
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -90,7 +90,7 @@ export function WebDesign() {
                   'Adapt seamlessly to mobile and tablet screens.',
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" />
+                    <CheckCircle2 className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
                     <span className="text-gray-700">{item}</span>
                   </li>
                 ))}
@@ -131,7 +131,7 @@ export function WebDesign() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="w-14 h-14 bg-primary-50 rounded-lg flex items-center justify-center mb-6 text-primary-600">
+                <div className="w-14 h-14 bg-primary-50 rounded-lg flex items-center justify-center mb-6 text-purple-600">
                   <feature.icon size={28} />
                 </div>
                 <h3 className="text-xl font-bold mb-3">{feature.title}</h3>

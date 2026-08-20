@@ -16,7 +16,7 @@ export function Blog() {
       {/* Hero Section */}
       <section className="bg-navy-900 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-primary-600/10 blur-[100px]" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-gradient-to-r from-blue-600 to-purple-600/10 blur-[100px]" />
         </div>
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center max-w-4xl">
           <motion.h1 
@@ -73,7 +73,7 @@ export function Blog() {
                     </div>
                   </div>
                   
-                  <Link to={`/blog/${post.slug}`} className="block mb-4 group-hover:text-primary-600 transition-colors">
+                  <Link to={`/blog/${post.slug}`} className="block mb-4 group-hover:text-purple-600 transition-colors">
                     <h2 className="text-xl font-bold text-navy-900 line-clamp-2 leading-tight">
                       {post.title}
                     </h2>
@@ -85,7 +85,7 @@ export function Blog() {
                   
                   <Link 
                     to={`/blog/${post.slug}`}
-                    className="inline-flex items-center gap-2 text-sm font-bold text-primary-600 group-hover:text-primary-700 transition-colors mt-auto"
+                    className="inline-flex items-center gap-2 text-sm font-bold text-purple-600 group-hover:text-primary-700 transition-colors mt-auto"
                   >
                     Read More <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Link>

@@ -37,7 +37,7 @@ export function Testimonials() {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-bold mb-4 text-gray-900"
           >
-            Client <span className="text-primary-600">Success Stories</span>
+            Client <span className="text-blue-600">Success Stories</span>
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}

@@ -16,7 +16,7 @@ export function Home() {
       />
       
       {/* Hero Section */}
-      <section className="relative pt-20 pb-32 lg:pt-32 lg:pb-40 overflow-hidden bg-slate-50">
+      <section className="relative pt-20 pb-32 lg:pt-32 lg:pb-40 overflow-hidden bg-gradient-to-br from-sky-50 via-blue-50 to-purple-100">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
             <motion.div 
@@ -27,21 +27,21 @@ export function Home() {
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-navy-900 mb-6 leading-[1.1]">
                 Build Your Digital Presence. <br className="hidden lg:block" />
-                <span className="text-primary-600">Grow Your Business.</span>
+                <span className="bg-gradient-to-r from-blue-600 via-sky-500 to-purple-600 bg-clip-text text-transparent">Grow Your Business.</span>
               </h1>
-              <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-xl">
+              <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed max-w-xl">
                 Webzify helps businesses build powerful websites, launch high-performing e-commerce stores, develop modern web solutions, and improve their online visibility with strategic SEO.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="inline-flex h-14 items-center justify-center rounded-lg bg-primary-600 px-8 text-base font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg"
+                  className="inline-flex h-14 items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-8 text-base font-semibold text-white transition-all hover:opacity-90 hover:shadow-lg hover:shadow-purple-500/25"
                 >
                   Get a Free Quote
                 </Link>
                 <Link
                   to="/services"
-                  className="inline-flex h-14 items-center justify-center rounded-lg border-2 border-gray-200 bg-white px-8 text-base font-semibold text-gray-900 transition-colors hover:border-gray-300 hover:bg-gray-50"
+                  className="inline-flex h-14 items-center justify-center rounded-lg border-2 border-purple-200 bg-white/50 backdrop-blur-sm px-8 text-base font-semibold text-gray-900 transition-colors hover:border-purple-300 hover:bg-white"
                 >
                   Explore Our Services
                 </Link>
@@ -65,11 +65,11 @@ export function Home() {
                 <motion.div 
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute -left-6 top-1/4 bg-white p-4 rounded-xl shadow-xl border border-gray-100 hidden md:block"
+                  className="absolute -left-6 top-1/4 bg-white/80 backdrop-blur p-4 rounded-xl shadow-xl border border-white hidden md:block"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
-                      <TrendingUp className="text-green-600 w-5 h-5" />
+                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+                      <TrendingUp className="text-blue-600 w-5 h-5" />
                     </div>
                     <div>
                       <p className="text-xs text-gray-500 font-medium">Traffic Growth</p>
@@ -81,11 +81,11 @@ export function Home() {
                 <motion.div 
                   animate={{ y: [0, 10, 0] }}
                   transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                  className="absolute -right-6 bottom-1/4 bg-white p-4 rounded-xl shadow-xl border border-gray-100 hidden md:block"
+                  className="absolute -right-6 bottom-1/4 bg-white/80 backdrop-blur p-4 rounded-xl shadow-xl border border-white hidden md:block"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center">
-                      <Code2 className="text-primary-600 w-5 h-5" />
+                    <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
+                      <Code2 className="text-purple-600 w-5 h-5" />
                     </div>
                     <div>
                       <p className="text-xs text-gray-500 font-medium">Clean Code</p>
@@ -122,8 +122,8 @@ export function Home() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow"
               >
-                <div className="w-14 h-14 rounded-xl bg-primary-100 flex items-center justify-center mb-6">
-                  <item.icon className="w-7 h-7 text-primary-600" />
+                <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-6">
+                  <item.icon className="w-7 h-7 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-bold text-navy-900 mb-3">{item.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{item.desc}</p>
@@ -141,7 +141,7 @@ export function Home() {
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Digital Services</h2>
               <p className="text-lg text-gray-400">Comprehensive digital solutions to help your business establish, grow, and dominate its online market.</p>
             </div>
-            <Link to="/services" className="hidden md:inline-flex items-center gap-2 text-primary-400 font-semibold hover:text-primary-300 transition-colors">
+            <Link to="/services" className="hidden md:inline-flex items-center gap-2 text-sky-400 font-semibold hover:text-primary-300 transition-colors">
               View All Services <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -157,14 +157,14 @@ export function Home() {
                 className="group rounded-2xl bg-white/5 border border-white/10 overflow-hidden hover:bg-white/10 transition-all"
               >
                 <div className="p-8">
-                  <service.icon className="w-10 h-10 text-primary-400 mb-6" />
+                  <service.icon className="w-10 h-10 text-sky-400 mb-6" />
                   <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
                   <p className="text-gray-400 mb-8 leading-relaxed min-h-[80px]">
                     {service.description}
                   </p>
                   <Link 
                     to={`/services/${service.slug}`}
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-white group-hover:text-primary-400 transition-colors"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-white group-hover:text-sky-400 transition-colors"
                   >
                     Explore {service.title} <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -174,7 +174,7 @@ export function Home() {
           </div>
           
           <div className="mt-8 text-center md:hidden">
-            <Link to="/services" className="inline-flex items-center gap-2 text-primary-400 font-semibold hover:text-primary-300 transition-colors">
+            <Link to="/services" className="inline-flex items-center gap-2 text-sky-400 font-semibold hover:text-primary-300 transition-colors">
               View All Services <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -199,7 +199,7 @@ export function Home() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary-100 rounded-full -z-10 blur-2xl" />
+              <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-blue-100 rounded-full -z-10 blur-2xl" />
               <div className="absolute -top-6 -left-6 w-48 h-48 bg-blue-100 rounded-full -z-10 blur-2xl" />
             </motion.div>
 
@@ -220,7 +220,7 @@ export function Home() {
               <ul className="space-y-4 mb-10">
                 {['Strategic approach to digital growth', 'Transparent communication and reporting', 'Focus on measurable business results'].map((item, i) => (
                   <li key={i} className="flex items-center gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-primary-600 shrink-0" />
+                    <CheckCircle2 className="w-6 h-6 text-blue-600 shrink-0" />
                     <span className="text-gray-800 font-medium">{item}</span>
                   </li>
                 ))}
@@ -271,7 +271,7 @@ export function Home() {
                   <div className="absolute inset-0 bg-navy-900/40 group-hover:bg-transparent transition-colors duration-500" />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-navy-900 to-transparent">
-                  <p className="text-primary-400 text-sm font-semibold mb-1">{item.category}</p>
+                  <p className="text-sky-400 text-sm font-semibold mb-1">{item.category}</p>
                   <h3 className="text-xl font-bold text-white">{item.title}</h3>
                 </div>
               </motion.div>
@@ -281,7 +281,7 @@ export function Home() {
           <div className="mt-16 text-center">
             <Link
               to="/contact"
-              className="inline-flex h-14 items-center justify-center rounded-lg bg-primary-600 px-8 text-base font-semibold text-white transition-all hover:bg-primary-700"
+              className="inline-flex h-14 items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-8 text-base font-semibold text-white transition-all hover:opacity-90"
             >
               Discuss Your Project
             </Link>
@@ -337,7 +337,7 @@ export function Home() {
               <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">Latest Insights</h2>
               <p className="text-lg text-gray-600">Practical tips, trends, and strategies for digital growth.</p>
             </div>
-            <Link to="/blog" className="hidden md:inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors">
+            <Link to="/blog" className="hidden md:inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-primary-700 transition-colors">
               View All Posts <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -375,7 +375,7 @@ export function Home() {
                     </div>
                   </div>
                   
-                  <Link to={`/blog/${post.slug}`} className="block mb-4 group-hover:text-primary-600 transition-colors">
+                  <Link to={`/blog/${post.slug}`} className="block mb-4 group-hover:text-blue-600 transition-colors">
                     <h2 className="text-xl font-bold text-navy-900 line-clamp-2 leading-tight">
                       {post.title}
                     </h2>
@@ -387,7 +387,7 @@ export function Home() {
                   
                   <Link 
                     to={`/blog/${post.slug}`}
-                    className="inline-flex items-center gap-2 text-sm font-bold text-primary-600 group-hover:text-primary-700 transition-colors mt-auto"
+                    className="inline-flex items-center gap-2 text-sm font-bold text-blue-600 group-hover:text-primary-700 transition-colors mt-auto"
                   >
                     Read More <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
@@ -397,7 +397,7 @@ export function Home() {
           </div>
 
           <div className="mt-8 text-center md:hidden">
-            <Link to="/blog" className="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors">
+            <Link to="/blog" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-primary-700 transition-colors">
               View All Posts <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

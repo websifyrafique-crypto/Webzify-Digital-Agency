@@ -24,7 +24,7 @@ export function BlogDetail() {
       <article className="pt-8 pb-24 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <Link to="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-primary-600 mb-8 transition-colors">
+            <Link to="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-purple-600 mb-8 transition-colors">
               <ArrowLeft className="w-4 h-4" /> Back to Blog
             </Link>
             
@@ -56,9 +56,9 @@ export function BlogDetail() {
               
               <div className="flex items-center gap-4 ml-auto">
                 <span className="text-gray-400">Share:</span>
-                <button className="text-gray-400 hover:text-primary-600 transition-colors"><Facebook className="w-4 h-4" /></button>
-                <button className="text-gray-400 hover:text-primary-600 transition-colors"><Twitter className="w-4 h-4" /></button>
-                <button className="text-gray-400 hover:text-primary-600 transition-colors"><Linkedin className="w-4 h-4" /></button>
+                <button className="text-gray-400 hover:text-purple-600 transition-colors"><Facebook className="w-4 h-4" /></button>
+                <button className="text-gray-400 hover:text-purple-600 transition-colors"><Twitter className="w-4 h-4" /></button>
+                <button className="text-gray-400 hover:text-purple-600 transition-colors"><Linkedin className="w-4 h-4" /></button>
               </div>
             </div>
             
@@ -74,7 +74,7 @@ export function BlogDetail() {
               className="prose prose-lg prose-blue max-w-none 
                 prose-headings:font-bold prose-headings:text-navy-900 
                 prose-p:text-gray-600 prose-p:leading-relaxed 
-                prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline"
+                prose-a:text-purple-600 prose-a:no-underline hover:prose-a:underline"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
           </div>

@@ -7,8 +7,8 @@ export function CtaSection() {
     <section className="relative py-24 lg:py-32 overflow-hidden bg-navy-900">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-1/2 -right-1/4 w-[1000px] h-[1000px] rounded-full bg-primary-600/10 blur-[120px]" />
-        <div className="absolute -bottom-1/2 -left-1/4 w-[800px] h-[800px] rounded-full bg-primary-500/10 blur-[100px]" />
+        <div className="absolute -top-1/2 -right-1/4 w-[1000px] h-[1000px] rounded-full bg-blue-600/20 blur-[120px]" />
+        <div className="absolute -bottom-1/2 -left-1/4 w-[800px] h-[800px] rounded-full bg-purple-600/20 blur-[100px]" />
       </div>
 
       <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
@@ -28,7 +28,7 @@ export function CtaSection() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               to="/contact"
-              className="inline-flex h-14 w-full sm:w-auto items-center justify-center rounded-lg bg-primary-600 px-8 text-base font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-[0_0_20px_rgba(37,99,235,0.4)]"
+              className="inline-flex h-14 w-full sm:w-auto items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-8 text-base font-semibold text-white transition-all hover:opacity-90 hover:shadow-[0_0_20px_rgba(147,51,234,0.4)]"
             >
               Get a Free Quote
             </Link>

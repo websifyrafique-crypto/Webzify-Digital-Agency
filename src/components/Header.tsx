@@ -49,7 +49,7 @@ export function Header() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="text-2xl font-bold tracking-tighter text-navy-900">
-            WEBZIFY<span className="text-primary-600">.</span>
+            WEBZIFY<span className="text-purple-600">.</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -61,8 +61,8 @@ export function Header() {
                     to={link.path}
                     className={({ isActive }) =>
                       cn(
-                        'inline-flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary-600 py-2',
-                        isActive ? 'text-primary-600' : 'text-gray-600'
+                        'inline-flex items-center gap-1 text-sm font-medium transition-colors hover:text-purple-600 py-2',
+                        isActive ? 'text-purple-600' : 'text-gray-600'
                       )
                     }
                   >
@@ -74,7 +74,7 @@ export function Header() {
                       <Link
                         key={subLink.name}
                         to={subLink.path}
-                        className="block px-4 py-2 text-sm text-gray-600 hover:text-primary-600 hover:bg-gray-50 transition-colors"
+                        className="block px-4 py-2 text-sm text-gray-600 hover:text-purple-600 hover:bg-gray-50 transition-colors"
                       >
                         {subLink.name}
                       </Link>
@@ -87,8 +87,8 @@ export function Header() {
                   to={link.path}
                   className={({ isActive }) =>
                     cn(
-                      'text-sm font-medium transition-colors hover:text-primary-600',
-                      isActive ? 'text-primary-600' : 'text-gray-600'
+                      'text-sm font-medium transition-colors hover:text-purple-600',
+                      isActive ? 'text-purple-600' : 'text-gray-600'
                     )
                   }
                 >
@@ -101,7 +101,7 @@ export function Header() {
           <div className="hidden md:block">
             <Link
               to="/contact"
-              className="inline-flex h-10 items-center justify-center rounded-md bg-primary-600 px-6 text-sm font-medium text-white transition-colors hover:bg-primary-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600"
+              className="inline-flex h-10 items-center justify-center rounded-md bg-gradient-to-r from-blue-600 to-purple-600 px-6 text-sm font-medium text-white transition-colors hover:opacity-90 hover:shadow-lg hover:shadow-purple-500/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600"
             >
               Get a Free Quote
             </Link>
@@ -109,7 +109,7 @@ export function Header() {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden p-2 text-gray-600 hover:text-primary-600 transition-colors"
+            className="md:hidden p-2 text-gray-600 hover:text-purple-600 transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle Menu"
           >
@@ -128,8 +128,8 @@ export function Header() {
                   to={link.path}
                   className={({ isActive }) =>
                     cn(
-                      'text-base font-medium transition-colors hover:text-primary-600 block py-2',
-                      isActive ? 'text-primary-600' : 'text-gray-600'
+                      'text-base font-medium transition-colors hover:text-purple-600 block py-2',
+                      isActive ? 'text-purple-600' : 'text-gray-600'
                     )
                   }
                 >
@@ -140,7 +140,7 @@ export function Header() {
                     <Link
                       key={subLink.name}
                       to={subLink.path}
-                      className="block py-2 text-sm text-gray-500 hover:text-primary-600 transition-colors"
+                      className="block py-2 text-sm text-gray-500 hover:text-purple-600 transition-colors"
                     >
                       {subLink.name}
                     </Link>
@@ -153,8 +153,8 @@ export function Header() {
                 to={link.path}
                 className={({ isActive }) =>
                   cn(
-                    'text-base font-medium transition-colors hover:text-primary-600 block py-2',
-                    isActive ? 'text-primary-600' : 'text-gray-600'
+                    'text-base font-medium transition-colors hover:text-purple-600 block py-2',
+                    isActive ? 'text-purple-600' : 'text-gray-600'
                   )
                 }
               >
@@ -164,7 +164,7 @@ export function Header() {
           ))}
           <Link
             to="/contact"
-            className="inline-flex h-12 mt-2 w-full items-center justify-center rounded-md bg-primary-600 px-6 text-sm font-medium text-white transition-colors hover:bg-primary-700"
+            className="inline-flex h-12 mt-2 w-full items-center justify-center rounded-md bg-gradient-to-r from-blue-600 to-purple-600 px-6 text-sm font-medium text-white transition-colors hover:opacity-90 hover:shadow-lg hover:shadow-purple-500/20"
           >
             Get a Free Quote
           </Link>
