@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, BarChart3, Code2, MonitorPlay, Search, TrendingUp, CheckCircle2 } from 'lucide-react';
 import { motion } from 'motion/react';
 import { SEO } from '../components/SEO';
+import { Testimonials } from '../components/Testimonials';
 import { CtaSection } from '../components/CtaSection';
 import { services } from '../data/services';
 
@@ -324,6 +325,8 @@ export function Home() {
           </div>
         </div>
       </section>
+
+      <Testimonials />
 
       <CtaSection />
     </>

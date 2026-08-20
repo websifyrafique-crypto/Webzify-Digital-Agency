@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Target, Lightbulb, Users, CheckCircle2 } from 'lucide-react';
 import { SEO } from '../components/SEO';
+import { Testimonials } from '../components/Testimonials';
 import { CtaSection } from '../components/CtaSection';
 
 export function About() {
@@ -132,6 +133,8 @@ export function About() {
           </div>
         </div>
       </section>
+
+      <Testimonials />
 
       <CtaSection />
     </>
