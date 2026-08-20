@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
-import { WhatsAppButton } from '../components/WhatsAppButton';
+import { FloatingContactButtons } from '../components/FloatingContactButtons';
 import { useEffect } from 'react';
 
 export function MainLayout() {
@@ -18,7 +18,7 @@ export function MainLayout() {
         <Outlet />
       </main>
       <Footer />
-      <WhatsAppButton />
+      <FloatingContactButtons />
     </div>
   );
 }
