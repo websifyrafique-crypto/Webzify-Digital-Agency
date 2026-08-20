@@ -46,7 +46,7 @@ export function WebDesign() {
       />
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-white overflow-hidden">
+      <section className="relative pt-20 pb-24 md:pt-28 md:pb-32 bg-blue-900 text-white overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-5"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
@@ -113,7 +113,7 @@ export function WebDesign() {
       </section>
 
       {/* Features Grid */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Web Design Expertise</h2>

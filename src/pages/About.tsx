@@ -78,7 +78,7 @@ export function About() {
       </section>
 
       {/* What We Believe / Approach */}
-      <section className="py-24 bg-white border-y border-slate-200">
+      <section className="py-24 bg-slate-50 border-y border-slate-200">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl font-bold text-blue-950 mb-4">Our Approach & Beliefs</h2>
