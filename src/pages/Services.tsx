@@ -14,7 +14,7 @@ export function Services() {
       />
       
       {/* Hero Section */}
-      <section className="bg-navy-900 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
+      <section className="bg-blue-900 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-blue-600/10 blur-[100px]" />
           <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full bg-primary-500/10 blur-[100px]" />
@@ -39,7 +39,7 @@ export function Services() {
       </section>
 
       {/* Services List */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-blue-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="space-y-24">
             {services.map((service, index) => (
@@ -60,18 +60,18 @@ export function Services() {
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-900/60 to-transparent" />
                   <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg flex items-center gap-4">
                     <service.icon className="w-8 h-8 text-blue-600" />
-                    <span className="font-bold text-navy-900">{service.title}</span>
+                    <span className="font-bold text-blue-950">{service.title}</span>
                   </div>
                 </div>
 
                 <div className={`${index % 2 !== 0 ? 'lg:col-start-1 lg:row-start-1 lg:ltr' : ''}`}>
-                  <h2 className="text-3xl font-bold text-navy-900 mb-6">{service.title}</h2>
+                  <h2 className="text-3xl font-bold text-blue-950 mb-6">{service.title}</h2>
                   <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                     {service.description}
                   </p>
                   
                   <div className="mb-8">
-                    <h3 className="text-lg font-bold text-navy-900 mb-4">Key Benefits</h3>
+                    <h3 className="text-lg font-bold text-blue-950 mb-4">Key Benefits</h3>
                     <ul className="space-y-3">
                       {service.keyBenefits.map((benefit, i) => (
                         <li key={i} className="flex items-start gap-3">
@@ -84,7 +84,7 @@ export function Services() {
 
                   <Link
                     to={`/services/${service.slug}`}
-                    className="inline-flex h-12 items-center justify-center rounded-lg bg-navy-900 px-8 text-sm font-semibold text-white transition-all hover:bg-blue-600 group"
+                    className="inline-flex h-12 items-center justify-center rounded-lg bg-blue-900 px-8 text-sm font-semibold text-white transition-all hover:bg-blue-600 group"
                   >
                     View Service Details
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />

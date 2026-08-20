@@ -13,7 +13,7 @@ export function About() {
       />
       
       {/* Hero Section */}
-      <section className="bg-navy-900 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
+      <section className="bg-blue-900 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute -top-1/2 -right-1/4 w-[800px] h-[800px] rounded-full bg-blue-600/10 blur-[100px]" />
         </div>
@@ -37,7 +37,7 @@ export function About() {
       </section>
 
       {/* Our Story & Mission */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-blue-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -47,14 +47,14 @@ export function About() {
               className="space-y-8"
             >
               <div>
-                <h2 className="text-3xl font-bold text-navy-900 mb-4">Our Story</h2>
+                <h2 className="text-3xl font-bold text-blue-950 mb-4">Our Story</h2>
                 <p className="text-gray-600 leading-relaxed">
                   Founded in Lahore, Webzify emerged from a clear observation: businesses were struggling to find a reliable partner that understood both the technical complexities of web development and the strategic nuances of digital marketing. We built Webzify to bridge that gap, offering a unified approach to digital growth.
                 </p>
               </div>
               
               <div>
-                <h2 className="text-3xl font-bold text-navy-900 mb-4">Our Mission</h2>
+                <h2 className="text-3xl font-bold text-blue-950 mb-4">Our Mission</h2>
                 <p className="text-gray-600 leading-relaxed">
                   To empower businesses with exceptional digital infrastructure. We aim to transform how companies present themselves online by delivering websites and marketing strategies that are not only visually impressive but functionally superior and conversion-optimized.
                 </p>
@@ -78,10 +78,10 @@ export function About() {
       </section>
 
       {/* What We Believe / Approach */}
-      <section className="py-24 bg-slate-50 border-y border-slate-200">
+      <section className="py-24 bg-blue-50 border-y border-slate-200">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold text-navy-900 mb-4">Our Approach & Beliefs</h2>
+            <h2 className="text-3xl font-bold text-blue-950 mb-4">Our Approach & Beliefs</h2>
             <p className="text-lg text-gray-600">The core principles that guide every project we undertake at Webzify.</p>
           </div>
 
@@ -102,7 +102,7 @@ export function About() {
                 <div className="w-12 h-12 rounded-lg bg-primary-50 flex items-center justify-center mb-6">
                   <item.icon className="w-6 h-6 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold text-navy-900 mb-3">{item.title}</h3>
+                <h3 className="text-xl font-bold text-blue-950 mb-3">{item.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{item.desc}</p>
               </motion.div>
             ))}
@@ -111,10 +111,10 @@ export function About() {
       </section>
 
       {/* Why Businesses Need Us */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-blue-50">
         <div className="container mx-auto px-4 md:px-6 max-w-5xl">
-          <h2 className="text-3xl font-bold text-navy-900 mb-8 text-center">Why Businesses Need a Strong Digital Presence</h2>
-          <div className="bg-slate-50 rounded-2xl p-8 md:p-12 border border-slate-100">
+          <h2 className="text-3xl font-bold text-blue-950 mb-8 text-center">Why Businesses Need a Strong Digital Presence</h2>
+          <div className="bg-blue-50 rounded-2xl p-8 md:p-12 border border-slate-100">
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 "First Impressions Matter: 94% of first impressions relate to your site's web design.",

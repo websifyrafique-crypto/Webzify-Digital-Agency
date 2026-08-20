@@ -73,7 +73,7 @@ export function Home() {
                     </div>
                     <div>
                       <p className="text-xs text-gray-500 font-medium">Traffic Growth</p>
-                      <p className="text-sm font-bold text-navy-900">+124.5%</p>
+                      <p className="text-sm font-bold text-blue-950">+124.5%</p>
                     </div>
                   </div>
                 </motion.div>
@@ -89,7 +89,7 @@ export function Home() {
                     </div>
                     <div>
                       <p className="text-xs text-gray-500 font-medium">Clean Code</p>
-                      <p className="text-sm font-bold text-navy-900">Optimized</p>
+                      <p className="text-sm font-bold text-blue-950">Optimized</p>
                     </div>
                   </div>
                 </motion.div>
@@ -100,10 +100,10 @@ export function Home() {
       </section>
 
       {/* Trust / Value Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-blue-100">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">Digital Solutions Designed Around Your Business</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4">Digital Solutions Designed Around Your Business</h2>
             <p className="text-lg text-gray-600">We don't just build websites; we create digital assets that drive real business results.</p>
           </div>
           
@@ -120,12 +120,12 @@ export function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow"
+                className="p-8 rounded-2xl bg-blue-50 border border-slate-100 hover:shadow-lg transition-shadow"
               >
                 <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-6">
                   <item.icon className="w-7 h-7 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold text-navy-900 mb-3">{item.title}</h3>
+                <h3 className="text-xl font-bold text-blue-950 mb-3">{item.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{item.desc}</p>
               </motion.div>
             ))}
@@ -138,7 +138,7 @@ export function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="mb-16 md:flex md:items-end md:justify-between">
             <div className="max-w-2xl">
-              <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">Our Digital Services</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4">Our Digital Services</h2>
               <p className="text-lg text-gray-600">Comprehensive digital solutions to help your business establish, grow, and dominate its online market.</p>
             </div>
             <Link to="/services" className="hidden md:inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors">
@@ -158,7 +158,7 @@ export function Home() {
               >
                 <div className="p-8">
                   <service.icon className="w-10 h-10 text-blue-600 group-hover:text-white mb-6 transition-colors" />
-                  <h3 className="text-2xl font-bold text-navy-900 group-hover:text-white transition-colors mb-4">{service.title}</h3>
+                  <h3 className="text-2xl font-bold text-blue-950 group-hover:text-white transition-colors mb-4">{service.title}</h3>
                   <p className="text-gray-600 group-hover:text-blue-50 transition-colors mb-8 leading-relaxed min-h-[80px]">
                     {service.description}
                   </p>
@@ -182,7 +182,7 @@ export function Home() {
       </section>
 
       {/* About Preview Section */}
-      <section className="py-24 bg-white overflow-hidden">
+      <section className="py-24 bg-blue-100 overflow-hidden">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -209,7 +209,7 @@ export function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-6">Your Digital Growth Partner</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-6">Your Digital Growth Partner</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Webzify combines world-class design, robust development, and strategic SEO to help businesses establish a stronger, more profitable online presence.
               </p>
@@ -228,7 +228,7 @@ export function Home() {
 
               <Link
                 to="/about"
-                className="inline-flex h-12 items-center justify-center rounded-lg bg-navy-900 px-8 text-sm font-semibold text-white transition-all hover:bg-navy-800"
+                className="inline-flex h-12 items-center justify-center rounded-lg bg-blue-900 px-8 text-sm font-semibold text-white transition-all hover:bg-blue-800"
               >
                 Learn More About Us
               </Link>
@@ -238,7 +238,7 @@ export function Home() {
       </section>
 
       {/* Portfolio / Showcase Section */}
-      <section className="py-24 bg-navy-900 text-white border-t border-white/10">
+      <section className="py-24 bg-blue-600 text-white border-t border-white/10">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Webzify Project Showcase</h2>
@@ -268,7 +268,7 @@ export function Home() {
                     alt={item.title} 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-navy-900/40 group-hover:bg-transparent transition-colors duration-500" />
+                  <div className="absolute inset-0 bg-blue-900/40 group-hover:bg-transparent transition-colors duration-500" />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-navy-900 to-transparent">
                   <p className="text-sky-400 text-sm font-semibold mb-1">{item.category}</p>
@@ -290,10 +290,10 @@ export function Home() {
       </section>
 
       {/* Process Section */}
-      <section className="py-24 bg-slate-50 border-y border-slate-200">
+      <section className="py-24 bg-blue-100 border-y border-slate-200">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">How We Work</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4">How We Work</h2>
             <p className="text-lg text-gray-600">A proven, transparent process to take your project from concept to successful launch.</p>
           </div>
 
@@ -318,7 +318,7 @@ export function Home() {
                   {step.num}
                 </div>
                 <div className="relative z-10">
-                  <h3 className="text-xl font-bold text-navy-900 mb-3">{step.title}</h3>
+                  <h3 className="text-xl font-bold text-blue-950 mb-3">{step.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{step.desc}</p>
                 </div>
               </motion.div>
@@ -330,11 +330,11 @@ export function Home() {
       <Testimonials />
 
       {/* Latest Insights / Blog Section */}
-      <section className="py-24 bg-white border-t border-slate-100">
+      <section className="py-24 bg-blue-50 border-t border-slate-100">
         <div className="container mx-auto px-4 md:px-6">
           <div className="mb-16 md:flex md:items-end md:justify-between">
             <div className="max-w-2xl">
-              <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">Latest Insights</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4">Latest Insights</h2>
               <p className="text-lg text-gray-600">Practical tips, trends, and strategies for digital growth.</p>
             </div>
             <Link to="/blog" className="hidden md:inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-primary-700 transition-colors">
@@ -358,7 +358,7 @@ export function Home() {
                     alt={post.title} 
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-navy-900 shadow-sm">
+                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-blue-950 shadow-sm">
                     {post.category}
                   </div>
                 </Link>
@@ -376,7 +376,7 @@ export function Home() {
                   </div>
                   
                   <Link to={`/blog/${post.slug}`} className="block mb-4 group-hover:text-blue-600 transition-colors">
-                    <h2 className="text-xl font-bold text-navy-900 line-clamp-2 leading-tight">
+                    <h2 className="text-xl font-bold text-blue-950 line-clamp-2 leading-tight">
                       {post.title}
                     </h2>
                   </Link>

@@ -14,7 +14,7 @@ export function Blog() {
       />
       
       {/* Hero Section */}
-      <section className="bg-navy-900 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
+      <section className="bg-blue-900 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-blue-600/10 blur-[100px]" />
         </div>
@@ -38,7 +38,7 @@ export function Blog() {
       </section>
 
       {/* Blog Listing */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-blue-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post, i) => (
@@ -56,7 +56,7 @@ export function Blog() {
                     alt={post.title} 
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-navy-900 shadow-sm">
+                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-blue-950 shadow-sm">
                     {post.category}
                   </div>
                 </Link>
@@ -74,7 +74,7 @@ export function Blog() {
                   </div>
                   
                   <Link to={`/blog/${post.slug}`} className="block mb-4 group-hover:text-blue-600 transition-colors">
-                    <h2 className="text-xl font-bold text-navy-900 line-clamp-2 leading-tight">
+                    <h2 className="text-xl font-bold text-blue-950 line-clamp-2 leading-tight">
                       {post.title}
                     </h2>
                   </Link>

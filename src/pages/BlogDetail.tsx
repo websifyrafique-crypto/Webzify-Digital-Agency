@@ -34,7 +34,7 @@ export function BlogDetail() {
               </span>
             </div>
 
-            <h1 className="text-3xl md:text-5xl font-bold text-navy-900 mb-8 leading-[1.2]">
+            <h1 className="text-3xl md:text-5xl font-bold text-blue-950 mb-8 leading-[1.2]">
               {post.title}
             </h1>
 
@@ -43,7 +43,7 @@ export function BlogDetail() {
                 <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">
                   <User className="w-5 h-5 text-gray-400" />
                 </div>
-                <span className="text-navy-900">{post.author}</span>
+                <span className="text-blue-950">{post.author}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Calendar className="w-4 h-4" />
@@ -72,7 +72,7 @@ export function BlogDetail() {
             
             <div 
               className="prose prose-lg prose-blue max-w-none 
-                prose-headings:font-bold prose-headings:text-navy-900 
+                prose-headings:font-bold prose-headings:text-blue-950 
                 prose-p:text-gray-600 prose-p:leading-relaxed 
                 prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline"
               dangerouslySetInnerHTML={{ __html: post.content }}

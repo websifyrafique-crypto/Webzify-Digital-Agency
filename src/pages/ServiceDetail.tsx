@@ -21,7 +21,7 @@ export function ServiceDetail() {
       />
       
       {/* Hero Section */}
-      <section className="bg-navy-900 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
+      <section className="bg-blue-900 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
         <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
           <img src={service.image} alt="Background" className="w-full h-full object-cover mix-blend-overlay" />
         </div>
@@ -53,13 +53,13 @@ export function ServiceDetail() {
       </section>
 
       {/* Main Content */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-blue-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
             
             <div className="lg:col-span-8 space-y-12">
               <div>
-                <h2 className="text-3xl font-bold text-navy-900 mb-6">Overview</h2>
+                <h2 className="text-3xl font-bold text-blue-950 mb-6">Overview</h2>
                 <p className="text-lg text-gray-600 leading-relaxed mb-6">
                   At Webzify, our {service.title.toLowerCase()} process is designed to deliver measurable results. We combine deep technical expertise with a strategic understanding of your business goals to create a solution that not only looks great but performs exceptionally well.
                 </p>
@@ -71,12 +71,12 @@ export function ServiceDetail() {
               </div>
 
               <div>
-                <h2 className="text-3xl font-bold text-navy-900 mb-6">What We Provide</h2>
+                <h2 className="text-3xl font-bold text-blue-950 mb-6">What We Provide</h2>
                 <div className="grid sm:grid-cols-2 gap-6">
                   {service.features.map((feature, index) => (
-                    <div key={index} className="bg-slate-50 p-6 rounded-xl border border-slate-100 flex items-start gap-4">
+                    <div key={index} className="bg-blue-50 p-6 rounded-xl border border-slate-100 flex items-start gap-4">
                       <CheckCircle2 className="w-6 h-6 text-blue-600 shrink-0" />
-                      <span className="font-semibold text-navy-900">{feature}</span>
+                      <span className="font-semibold text-blue-950">{feature}</span>
                     </div>
                   ))}
                 </div>
@@ -84,8 +84,8 @@ export function ServiceDetail() {
             </div>
 
             <div className="lg:col-span-4">
-              <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200 sticky top-32">
-                <h3 className="text-xl font-bold text-navy-900 mb-6">Key Benefits</h3>
+              <div className="bg-blue-50 p-8 rounded-2xl border border-slate-200 sticky top-32">
+                <h3 className="text-xl font-bold text-blue-950 mb-6">Key Benefits</h3>
                 <ul className="space-y-4 mb-8">
                   {service.keyBenefits.map((benefit, i) => (
                     <li key={i} className="flex items-start gap-3">
