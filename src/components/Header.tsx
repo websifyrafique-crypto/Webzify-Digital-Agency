@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { cn } from '../lib/utils';
 
 export function Header() {
@@ -23,7 +23,16 @@ export function Header() {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
-    { name: 'Our Services', path: '/services' },
+    { 
+      name: 'Our Services', 
+      path: '/services',
+      subLinks: [
+        { name: 'Website Designing', path: '/services/web-design' },
+        { name: 'E-Commerce Website', path: '/services/ecommerce' },
+        { name: 'Website Development', path: '/services/web-development' },
+        { name: 'SEO Services', path: '/services/seo' },
+      ]
+    },
     { name: 'Blog', path: '/blog' },
     { name: 'Contact Us', path: '/contact' },
   ];
@@ -46,18 +55,46 @@ export function Header() {
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <NavLink
-                key={link.name}
-                to={link.path}
-                className={({ isActive }) =>
-                  cn(
-                    'text-sm font-medium transition-colors hover:text-primary-600',
-                    isActive ? 'text-primary-600' : 'text-gray-600'
-                  )
-                }
-              >
-                {link.name}
-              </NavLink>
+              link.subLinks ? (
+                <div key={link.name} className="relative group">
+                  <NavLink
+                    to={link.path}
+                    className={({ isActive }) =>
+                      cn(
+                        'inline-flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary-600 py-2',
+                        isActive ? 'text-primary-600' : 'text-gray-600'
+                      )
+                    }
+                  >
+                    {link.name}
+                    <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
+                  </NavLink>
+                  <div className="absolute left-0 top-full hidden group-hover:block w-56 bg-white shadow-xl border border-gray-100 rounded-md py-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    {link.subLinks.map((subLink) => (
+                      <Link
+                        key={subLink.name}
+                        to={subLink.path}
+                        className="block px-4 py-2 text-sm text-gray-600 hover:text-primary-600 hover:bg-gray-50 transition-colors"
+                      >
+                        {subLink.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <NavLink
+                  key={link.name}
+                  to={link.path}
+                  className={({ isActive }) =>
+                    cn(
+                      'text-sm font-medium transition-colors hover:text-primary-600',
+                      isActive ? 'text-primary-600' : 'text-gray-600'
+                    )
+                  }
+                >
+                  {link.name}
+                </NavLink>
+              )
             ))}
           </nav>
 
@@ -83,20 +120,47 @@ export function Header() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white border-t shadow-lg py-4 px-4 flex flex-col gap-4">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white border-t shadow-lg py-4 px-4 flex flex-col gap-4 max-h-[80vh] overflow-y-auto">
           {navLinks.map((link) => (
-            <NavLink
-              key={link.name}
-              to={link.path}
-              className={({ isActive }) =>
-                cn(
-                  'text-base font-medium transition-colors hover:text-primary-600 block py-2',
-                  isActive ? 'text-primary-600' : 'text-gray-600'
-                )
-              }
-            >
-              {link.name}
-            </NavLink>
+            link.subLinks ? (
+              <div key={link.name} className="flex flex-col">
+                <NavLink
+                  to={link.path}
+                  className={({ isActive }) =>
+                    cn(
+                      'text-base font-medium transition-colors hover:text-primary-600 block py-2',
+                      isActive ? 'text-primary-600' : 'text-gray-600'
+                    )
+                  }
+                >
+                  {link.name}
+                </NavLink>
+                <div className="pl-4 border-l-2 border-gray-100 mt-1 flex flex-col gap-1">
+                  {link.subLinks.map((subLink) => (
+                    <Link
+                      key={subLink.name}
+                      to={subLink.path}
+                      className="block py-2 text-sm text-gray-500 hover:text-primary-600 transition-colors"
+                    >
+                      {subLink.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <NavLink
+                key={link.name}
+                to={link.path}
+                className={({ isActive }) =>
+                  cn(
+                    'text-base font-medium transition-colors hover:text-primary-600 block py-2',
+                    isActive ? 'text-primary-600' : 'text-gray-600'
+                  )
+                }
+              >
+                {link.name}
+              </NavLink>
+            )
           ))}
           <Link
             to="/contact"

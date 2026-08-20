@@ -1,6 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script>
+      (function() {
+        try {
+          const origFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get: () => origFetch,
+            set: (val) => {
+              console.warn('Prevented overriding window.fetch to avoid TypeError');
+            },
+            configurable: true
+          });
+        } catch (e) {}
+      })();
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Google AI Studio App</title>
