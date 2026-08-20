@@ -7,7 +7,7 @@ export const services = [
     slug: "website-designing",
     description: "Create modern, responsive and user-friendly websites that represent businesses professionally and turn visitors into customers.",
     icon: Layout,
-    image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&q=80&w=1200",
+    image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&q=80&w=1200",
     keyBenefits: [
       "Custom, visually striking designs",
       "Mobile-first, responsive layouts",

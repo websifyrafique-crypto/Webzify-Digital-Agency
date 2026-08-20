@@ -8,7 +8,7 @@ export const blogPosts = [
     date: "August 15, 2026",
     readingTime: "5 min read",
     excerpt: "In today's digital-first world, a professional website is no longer optional. Discover why your business needs a strong online presence to survive and thrive.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800",
     content: `
       <h2>The Digital First Economy</h2>
       <p>As we navigate through 2026, the shift towards a digital-first economy is more pronounced than ever. Consumers turn to search engines and websites before making almost any purchasing decision. If your business isn't there, you're essentially invisible to a vast segment of your target audience.</p>
@@ -32,7 +32,7 @@ export const blogPosts = [
     date: "August 02, 2026",
     readingTime: "4 min read",
     excerpt: "Stay ahead of the curve with these emerging website design trends that focus on user experience, accessibility, and modern aesthetics.",
-    image: "https://images.unsplash.com/photo-1507238692062-5a042e9e18f4?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800",
     content: `
       <h2>Minimalism Meets Micro-Interactions</h2>
       <p>Clean, minimalist interfaces are here to stay, but they are evolving. The focus is now on subtle micro-interactions that guide users and provide immediate feedback without overwhelming the visual experience.</p>
@@ -53,7 +53,7 @@ export const blogPosts = [
     date: "July 28, 2026",
     readingTime: "6 min read",
     excerpt: "Search Engine Optimization is the most cost-effective way to drive sustainable, high-quality traffic to your small business. Learn how it works.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=800",
     content: `
       <h2>Leveling the Playing Field</h2>
       <p>SEO allows small businesses to compete with much larger corporations. By targeting specific, niche keywords and optimizing your local presence, you can attract highly relevant traffic that is actively searching for your services.</p>
@@ -74,7 +74,7 @@ export const blogPosts = [
     date: "July 15, 2026",
     readingTime: "5 min read",
     excerpt: "Traffic means nothing without conversions. Discover the key elements that turn your e-commerce visitors into paying customers.",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800",
     content: `
       <h2>Frictionless Checkout</h2>
       <p>The number one reason for cart abandonment is a complicated checkout process. High-converting stores offer guest checkout, multiple payment options, and minimize the number of form fields required.</p>
@@ -95,7 +95,7 @@ export const blogPosts = [
     date: "June 30, 2026",
     readingTime: "4 min read",
     excerpt: "A slow website costs you customers and search rankings. Understand why performance is a critical business metric, not just a technical detail.",
-    image: "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=800",
     content: `
       <h2>The Cost of Milliseconds</h2>
       <p>Studies consistently show that even a one-second delay in page load time can lead to a significant drop in conversions. Users expect instantaneous experiences; if your site doesn't deliver, they will bounce to a competitor.</p>
@@ -116,7 +116,7 @@ export const blogPosts = [
     date: "June 12, 2026",
     readingTime: "5 min read",
     excerpt: "Are you a business operating in Lahore? Learn actionable local SEO strategies to dominate search results in your city.",
-    image: "https://images.unsplash.com/photo-1590050752117-238cb123e4db?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800",
     content: `
       <h2>Optimize Your Google Business Profile</h2>
       <p>Your Google Business Profile is the cornerstone of local SEO. Ensure your name, address, and phone number (NAP) are accurate and consistent. Regularly update your profile with fresh photos, posts, and responses to reviews.</p>
