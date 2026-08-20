@@ -55,7 +55,7 @@ export function Contact() {
             
             {/* Contact Info */}
             <div className="bg-navy-800 text-white p-10 md:p-14 lg:w-2/5 flex flex-col justify-between relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur-3xl opacity-20 -mr-32 -mt-32" />
+              <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600 rounded-full blur-3xl opacity-20 -mr-32 -mt-32" />
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary-500 rounded-full blur-3xl opacity-20 -ml-32 -mb-32" />
               
               <div className="relative z-10">
@@ -183,7 +183,7 @@ export function Contact() {
                   <button 
                     type="submit" 
                     disabled={formState === 'submitting'}
-                    className="w-full h-14 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold flex items-center justify-center transition-all hover:opacity-90 focus:ring-4 focus:ring-primary-500/30 disabled:opacity-70"
+                    className="w-full h-14 rounded-lg bg-blue-600 text-white font-semibold flex items-center justify-center transition-all hover:bg-blue-700 focus:ring-4 focus:ring-primary-500/30 disabled:opacity-70"
                   >
                     {formState === 'submitting' ? 'Sending Message...' : 'Send Message'}
                   </button>

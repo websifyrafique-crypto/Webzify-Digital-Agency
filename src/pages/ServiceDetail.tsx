@@ -29,7 +29,7 @@ export function ServiceDetail() {
           <motion.div 
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="w-20 h-20 rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600/20 backdrop-blur-md flex items-center justify-center mx-auto mb-8 border border-primary-500/30"
+            className="w-20 h-20 rounded-2xl bg-blue-600/20 backdrop-blur-md flex items-center justify-center mx-auto mb-8 border border-primary-500/30"
           >
             <service.icon className="w-10 h-10 text-primary-400" />
           </motion.div>
@@ -75,7 +75,7 @@ export function ServiceDetail() {
                 <div className="grid sm:grid-cols-2 gap-6">
                   {service.features.map((feature, index) => (
                     <div key={index} className="bg-slate-50 p-6 rounded-xl border border-slate-100 flex items-start gap-4">
-                      <CheckCircle2 className="w-6 h-6 text-purple-600 shrink-0" />
+                      <CheckCircle2 className="w-6 h-6 text-blue-600 shrink-0" />
                       <span className="font-semibold text-navy-900">{feature}</span>
                     </div>
                   ))}
@@ -89,7 +89,7 @@ export function ServiceDetail() {
                 <ul className="space-y-4 mb-8">
                   {service.keyBenefits.map((benefit, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 mt-2 shrink-0" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-600 mt-2 shrink-0" />
                       <span className="text-gray-700">{benefit}</span>
                     </li>
                   ))}
@@ -103,7 +103,7 @@ export function ServiceDetail() {
                 <div className="mt-8 pt-8 border-t border-slate-200">
                   <Link
                     to="/contact"
-                    className="flex w-full items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-4 py-4 text-sm font-semibold text-white transition-all hover:opacity-90 hover:shadow-lg"
+                    className="flex w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-4 text-sm font-semibold text-white transition-all hover:bg-blue-700 hover:shadow-lg"
                   >
                     Start Your Project
                   </Link>

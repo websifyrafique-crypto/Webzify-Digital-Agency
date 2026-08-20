@@ -146,7 +146,7 @@ export function Seo() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="w-14 h-14 bg-primary-50 rounded-lg flex items-center justify-center mb-6 text-purple-600">
+                <div className="w-14 h-14 bg-primary-50 rounded-lg flex items-center justify-center mb-6 text-blue-600">
                   <feature.icon size={28} />
                 </div>
                 <h3 className="text-xl font-bold mb-3">{feature.title}</h3>

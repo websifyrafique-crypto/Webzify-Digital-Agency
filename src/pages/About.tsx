@@ -15,7 +15,7 @@ export function About() {
       {/* Hero Section */}
       <section className="bg-navy-900 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-1/2 -right-1/4 w-[800px] h-[800px] rounded-full bg-gradient-to-r from-blue-600 to-purple-600/10 blur-[100px]" />
+          <div className="absolute -top-1/2 -right-1/4 w-[800px] h-[800px] rounded-full bg-blue-600/10 blur-[100px]" />
         </div>
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center max-w-4xl">
           <motion.h1 
@@ -100,7 +100,7 @@ export function About() {
                 className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100"
               >
                 <div className="w-12 h-12 rounded-lg bg-primary-50 flex items-center justify-center mb-6">
-                  <item.icon className="w-6 h-6 text-purple-600" />
+                  <item.icon className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-bold text-navy-900 mb-3">{item.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{item.desc}</p>
@@ -125,7 +125,7 @@ export function About() {
                 "Competitive Edge: A superior digital experience sets you apart from local competitors."
               ].map((point, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-purple-600 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" />
                   <p className="text-gray-700">{point}</p>
                 </div>
               ))}

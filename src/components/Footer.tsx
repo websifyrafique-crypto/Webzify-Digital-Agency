@@ -10,25 +10,25 @@ export function Footer() {
           {/* Column 1 */}
           <div className="flex flex-col gap-6">
             <Link to="/" className="text-2xl font-bold tracking-tighter text-white">
-              WEBZIFY<span className="text-purple-500">.</span>
+              WEBZIFY<span className="text-blue-500">.</span>
             </Link>
             <p className="text-gray-400 leading-relaxed max-w-sm">
               Digital solutions for businesses ready to build, grow and compete online.
             </p>
             <div className="flex items-center gap-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gradient-to-r from-blue-600 to-purple-600 hover:text-white transition-all text-gray-400">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all text-gray-400">
                 <Facebook className="h-4 w-4" />
                 <span className="sr-only">Facebook</span>
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gradient-to-r from-blue-600 to-purple-600 hover:text-white transition-all text-gray-400">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all text-gray-400">
                 <Twitter className="h-4 w-4" />
                 <span className="sr-only">Twitter</span>
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gradient-to-r from-blue-600 to-purple-600 hover:text-white transition-all text-gray-400">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all text-gray-400">
                 <Linkedin className="h-4 w-4" />
                 <span className="sr-only">LinkedIn</span>
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gradient-to-r from-blue-600 to-purple-600 hover:text-white transition-all text-gray-400">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all text-gray-400">
                 <Instagram className="h-4 w-4" />
                 <span className="sr-only">Instagram</span>
               </a>
@@ -63,11 +63,11 @@ export function Footer() {
             <h3 className="text-white font-semibold text-lg">Contact</h3>
             <ul className="flex flex-col gap-4">
               <li className="flex items-start gap-3">
-                <Phone className="h-5 w-5 text-purple-500 shrink-0 mt-0.5" />
+                <Phone className="h-5 w-5 text-blue-500 shrink-0 mt-0.5" />
                 <span>+92 303 6346909</span>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-purple-500 shrink-0 mt-0.5" />
+                <MapPin className="h-5 w-5 text-blue-500 shrink-0 mt-0.5" />
                 <span>Office No-G 5, Brother Plaza,<br/>Hall Road, Lahore, Pakistan</span>
               </li>
             </ul>

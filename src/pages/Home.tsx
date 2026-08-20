@@ -16,7 +16,7 @@ export function Home() {
       />
       
       {/* Hero Section */}
-      <section className="relative pt-20 pb-32 lg:pt-32 lg:pb-40 overflow-hidden bg-gradient-to-br from-sky-50 via-blue-50 to-purple-100">
+      <section className="relative pt-20 pb-32 lg:pt-32 lg:pb-40 overflow-hidden bg-blue-600">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
             <motion.div 
@@ -25,23 +25,23 @@ export function Home() {
               transition={{ duration: 0.6 }}
               className="max-w-2xl"
             >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-navy-900 mb-6 leading-[1.1]">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 leading-[1.1]">
                 Build Your Digital Presence. <br className="hidden lg:block" />
-                <span className="bg-gradient-to-r from-blue-600 via-sky-500 to-purple-600 bg-clip-text text-transparent">Grow Your Business.</span>
+                <span className="text-blue-200">Grow Your Business.</span>
               </h1>
-              <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed max-w-xl">
+              <p className="text-lg md:text-xl text-blue-50 mb-8 leading-relaxed max-w-xl">
                 Webzify helps businesses build powerful websites, launch high-performing e-commerce stores, develop modern web solutions, and improve their online visibility with strategic SEO.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="inline-flex h-14 items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-8 text-base font-semibold text-white transition-all hover:opacity-90 hover:shadow-lg hover:shadow-purple-500/25"
+                  className="inline-flex h-14 items-center justify-center rounded-lg bg-white px-8 text-base font-semibold text-blue-600 transition-all hover:bg-blue-50 hover:shadow-lg hover:shadow-blue-900/20"
                 >
                   Get a Free Quote
                 </Link>
                 <Link
                   to="/services"
-                  className="inline-flex h-14 items-center justify-center rounded-lg border-2 border-purple-200 bg-white/50 backdrop-blur-sm px-8 text-base font-semibold text-gray-900 transition-colors hover:border-purple-300 hover:bg-white"
+                  className="inline-flex h-14 items-center justify-center rounded-lg border-2 border-blue-400 bg-blue-700/50 backdrop-blur-sm px-8 text-base font-semibold text-white transition-colors hover:border-blue-300 hover:bg-blue-700"
                 >
                   Explore Our Services
                 </Link>
@@ -84,8 +84,8 @@ export function Home() {
                   className="absolute -right-6 bottom-1/4 bg-white/80 backdrop-blur p-4 rounded-xl shadow-xl border border-white hidden md:block"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
-                      <Code2 className="text-purple-600 w-5 h-5" />
+                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+                      <Code2 className="text-blue-600 w-5 h-5" />
                     </div>
                     <div>
                       <p className="text-xs text-gray-500 font-medium">Clean Code</p>
@@ -134,14 +134,14 @@ export function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-24 bg-navy-900 text-white">
+      <section className="py-24 bg-blue-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="mb-16 md:flex md:items-end md:justify-between">
             <div className="max-w-2xl">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Digital Services</h2>
-              <p className="text-lg text-gray-400">Comprehensive digital solutions to help your business establish, grow, and dominate its online market.</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">Our Digital Services</h2>
+              <p className="text-lg text-gray-600">Comprehensive digital solutions to help your business establish, grow, and dominate its online market.</p>
             </div>
-            <Link to="/services" className="hidden md:inline-flex items-center gap-2 text-sky-400 font-semibold hover:text-primary-300 transition-colors">
+            <Link to="/services" className="hidden md:inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors">
               View All Services <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -154,17 +154,17 @@ export function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="group rounded-2xl bg-white/5 border border-white/10 overflow-hidden hover:bg-white/10 transition-all"
+                className="group rounded-2xl bg-white border border-blue-100 overflow-hidden hover:bg-blue-600 transition-all shadow-sm hover:shadow-lg"
               >
                 <div className="p-8">
-                  <service.icon className="w-10 h-10 text-sky-400 mb-6" />
-                  <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
-                  <p className="text-gray-400 mb-8 leading-relaxed min-h-[80px]">
+                  <service.icon className="w-10 h-10 text-blue-600 group-hover:text-white mb-6 transition-colors" />
+                  <h3 className="text-2xl font-bold text-navy-900 group-hover:text-white transition-colors mb-4">{service.title}</h3>
+                  <p className="text-gray-600 group-hover:text-blue-50 transition-colors mb-8 leading-relaxed min-h-[80px]">
                     {service.description}
                   </p>
                   <Link 
                     to={`/services/${service.slug}`}
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-white group-hover:text-sky-400 transition-colors"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 group-hover:text-white transition-colors"
                   >
                     Explore {service.title} <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -174,7 +174,7 @@ export function Home() {
           </div>
           
           <div className="mt-8 text-center md:hidden">
-            <Link to="/services" className="inline-flex items-center gap-2 text-sky-400 font-semibold hover:text-primary-300 transition-colors">
+            <Link to="/services" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors">
               View All Services <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -281,7 +281,7 @@ export function Home() {
           <div className="mt-16 text-center">
             <Link
               to="/contact"
-              className="inline-flex h-14 items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-8 text-base font-semibold text-white transition-all hover:opacity-90"
+              className="inline-flex h-14 items-center justify-center rounded-lg bg-blue-600 px-8 text-base font-semibold text-white transition-all hover:bg-blue-700"
             >
               Discuss Your Project
             </Link>
