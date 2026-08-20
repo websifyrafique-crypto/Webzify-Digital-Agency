@@ -33,7 +33,7 @@ export function FloatingContactButtons() {
           {isVisible && (
             <motion.button
               onClick={scrollToTop}
-              className="flex h-14 w-14 items-center justify-center rounded-xl bg-gray-800 text-white shadow-lg transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-offset-2"
+              className="flex h-14 w-14 items-center justify-center rounded-xl bg-blue-600 text-white shadow-lg transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
               initial={{ scale: 0, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0, opacity: 0 }}
