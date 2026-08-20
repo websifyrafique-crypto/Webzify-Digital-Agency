@@ -1,0 +1,6 @@
+{
+  "name": "Webzify Agency Website",
+  "description": "Professional digital marketing and web development agency website with responsive design, SEO-friendly architecture, and modern UI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
