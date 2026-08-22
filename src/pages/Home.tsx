@@ -6,7 +6,8 @@ import { Testimonials } from '../components/Testimonials';
 import { CtaSection } from '../components/CtaSection';
 import { services } from '../data/services';
 import { blogPosts } from '../data/blog';
-import heroImage from '../assets/images/professional_working_laptop_1787420542150.jpg';
+import aboutImage from "../assets/images/digital_marketing_expert_working_1787425710387.jpg";
+import heroImage from '../assets/images/british_woman_office_computer_1787426115658.jpg';
 
 export function Home() {
   return (
@@ -201,54 +202,123 @@ export function Home() {
       {/* About Preview Section */}
       <section className="py-24 bg-white overflow-hidden">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-12 items-center">
+            
+            {/* Left Column: Text */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="relative"
+              className="max-w-xl mx-auto lg:mx-0 order-2 lg:order-1"
             >
-              <div className="aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200" 
-                  alt="Webzify Team Working" 
-                  className="w-full h-full object-cover"
-                />
+              <h2 className="text-3xl md:text-5xl lg:text-[2.75rem] font-black text-blue-950 mb-6 leading-[1.15] tracking-tight">
+                Web Designing <br className="hidden md:block" />
+                Company in <span className="text-rose-500">Pakistan</span>
+              </h2>
+              <p className="text-gray-600 mb-10 leading-relaxed text-sm md:text-base">
+                Webzify is providing custom, professional and affordable website designing & development services for your business in Pakistan. We specialize in helping small businesses to establish their digital brand and dominate the competition with modern and smart web design.
+              </p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-5 mb-12">
+                {[
+                  { text: 'Custom Website Design', color: 'bg-blue-950' },
+                  { text: 'SEO-Friendly Websites', color: 'bg-indigo-600' },
+                  { text: 'Responsive Web Design', color: 'bg-rose-500' },
+                  { text: 'Digital Marketing', color: 'bg-blue-950' }
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-3">
+                    <div className={`w-6 h-6 rounded-full ${item.color} flex items-center justify-center shrink-0 shadow-sm`}>
+                      <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-800 font-semibold text-sm">{item.text}</span>
+                  </div>
+                ))}
               </div>
-              <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-blue-100 rounded-full -z-10 blur-2xl" />
-              <div className="absolute -top-6 -left-6 w-48 h-48 bg-blue-100 rounded-full -z-10 blur-2xl" />
+
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
+                <Link
+                  to="/about"
+                  className="inline-flex h-12 items-center justify-center rounded-full bg-indigo-600 px-8 text-sm font-bold text-white transition-all hover:bg-indigo-700 uppercase tracking-wider shadow-lg shadow-indigo-600/20"
+                >
+                  Read More
+                </Link>
+                
+                <div className="flex items-center gap-4 border-l-2 border-gray-100 pl-6 h-12">
+                  <img 
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150" 
+                    alt="Meggie Wilson"
+                    className="w-10 h-10 rounded-full object-cover shadow-sm"
+                  />
+                  <div className="flex flex-col justify-center">
+                    <h4 className="text-blue-950 font-bold text-sm leading-tight mb-0.5">Meggie Wilson</h4>
+                    <p className="text-gray-500 text-[10px] uppercase tracking-wider font-semibold leading-tight">CEO, Head Director</p>
+                  </div>
+                </div>
+              </div>
             </motion.div>
 
+            {/* Right Column: Image */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
+              className="relative w-full max-w-md lg:max-w-none mx-auto order-1 lg:order-2 pl-0 lg:pl-10 pb-16 lg:pb-0"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-6">Your Digital Growth Partner</h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Webzify combines world-class design, robust development, and strategic SEO to help businesses establish a stronger, more profitable online presence.
-              </p>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                We believe that a website should be more than just a digital brochure; it should be a hard-working asset that attracts visitors, builds trust, and generates revenue.
-              </p>
-              
-              <ul className="space-y-4 mb-10">
-                {['Strategic approach to digital growth', 'Transparent communication and reporting', 'Focus on measurable business results'].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-blue-600 shrink-0" />
-                    <span className="text-gray-800 font-medium">{item}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="relative">
+                {/* Main shape */}
+                <div 
+                  className="overflow-hidden bg-gray-100 relative z-10 shadow-2xl"
+                  style={{ borderRadius: '48px 160px 48px 160px', aspectRatio: '4/3' }}
+                >
+                  <img 
+                    src={aboutImage}
+                    alt="Digital Marketing Professional" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
 
-              <Link
-                to="/about"
-                className="inline-flex h-12 items-center justify-center rounded-lg bg-blue-900 px-8 text-sm font-semibold text-white transition-all hover:bg-blue-800"
-              >
-                Learn More About Us
-              </Link>
+                {/* Floating Card 1 */}
+                <motion.div 
+                  animate={{ y: [0, -10, 0] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                  className="absolute -left-4 md:-left-12 top-8 md:top-16 bg-white p-3 pr-8 rounded-full shadow-2xl border border-gray-50 z-20 flex items-center gap-4"
+                >
+                  <div className="w-12 h-12 rounded-full bg-rose-500 flex items-center justify-center shadow-lg shadow-rose-500/30">
+                    <BarChart3 className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-2xl font-black text-blue-950 leading-none mb-1">120%</p>
+                    <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Engagement</p>
+                  </div>
+                </motion.div>
+
+                {/* Floating Card 2 */}
+                <motion.div 
+                  animate={{ y: [0, 10, 0] }}
+                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                  className="absolute -left-2 md:-left-6 bottom-4 md:-bottom-8 bg-white p-5 rounded-2xl shadow-2xl border border-gray-50 z-20 w-[220px]"
+                >
+                  <div className="flex justify-between items-start mb-4">
+                    <p className="text-xs font-bold text-gray-800 leading-tight">Increase<br/>Sales</p>
+                    <p className="text-xs font-bold text-teal-500">+65,4%</p>
+                  </div>
+                  <svg viewBox="0 0 100 40" className="w-full h-14 overflow-visible">
+                    <path d="M0,35 Q10,30 20,35 T40,25 T60,28 T80,15 T100,5" fill="none" stroke="#14b8a6" strokeWidth="2.5" strokeLinecap="round" />
+                    <circle cx="100" cy="5" r="3.5" fill="#14b8a6" />
+                    <path d="M0,35 Q10,30 20,35 T40,25 T60,28 T80,15 T100,5 L100,40 L0,40 Z" fill="url(#grad)" opacity="0.2" />
+                    <defs>
+                      <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stopColor="#14b8a6" stopOpacity="1" />
+                        <stop offset="100%" stopColor="#14b8a6" stopOpacity="0" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </motion.div>
+              </div>
             </motion.div>
           </div>
         </div>
