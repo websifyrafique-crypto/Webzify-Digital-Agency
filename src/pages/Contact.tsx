@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { MapPin, Phone, Mail, CheckCircle2, AlertCircle } from 'lucide-react';
 import { SEO } from '../components/SEO';
-import { supabase } from '../lib/supabase';
 
 export function Contact() {
   const [formState, setFormState] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
@@ -12,21 +11,21 @@ export function Contact() {
     setFormState('submitting');
     
     const formData = new FormData(e.currentTarget);
-    const data = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      phone: formData.get('phone'),
-      service: formData.get('service'),
-      message: formData.get('message'),
-    };
     
     try {
-      const { error } = await supabase
-        .from('contacts')
-        .insert([data]);
+      // Replace YOUR_FORMBOLD_ENDPOINT with your actual Formbold form endpoint URL
+      const formboldEndpoint = import.meta.env.VITE_FORMBOLD_ENDPOINT || 'https://formbold.com/s/FORM_ID';
+      
+      const response = await fetch(formboldEndpoint, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      });
         
-      if (error) {
-        throw error;
+      if (!response.ok) {
+        throw new Error('Form submission failed');
       }
       
       setFormState('success');
