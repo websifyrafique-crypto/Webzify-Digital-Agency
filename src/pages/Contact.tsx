@@ -2,20 +2,40 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { MapPin, Phone, Mail, CheckCircle2, AlertCircle } from 'lucide-react';
 import { SEO } from '../components/SEO';
+import { supabase } from '../lib/supabase';
 
 export function Contact() {
   const [formState, setFormState] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormState('submitting');
     
-    // Simulate API call
-    setTimeout(() => {
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      service: formData.get('service'),
+      message: formData.get('message'),
+    };
+    
+    try {
+      const { error } = await supabase
+        .from('contacts')
+        .insert([data]);
+        
+      if (error) {
+        throw error;
+      }
+      
       setFormState('success');
-      // Reset after 3 seconds
+      // Reset after 5 seconds
       setTimeout(() => setFormState('idle'), 5000);
-    }, 1500);
+    } catch (err) {
+      console.error('Error saving contact:', err);
+      setFormState('error');
+    }
   };
 
   return (
@@ -117,6 +137,24 @@ export function Contact() {
                   <h3 className="text-2xl font-bold text-green-800 mb-2">Message Sent!</h3>
                   <p className="text-green-700">Thank you for reaching out. We will get back to you shortly.</p>
                 </motion.div>
+              ) : formState === 'error' ? (
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="bg-red-50 border border-red-200 rounded-xl p-8 text-center h-full flex flex-col items-center justify-center min-h-[400px]"
+                >
+                  <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <AlertCircle className="w-8 h-8 text-red-600" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-red-800 mb-2">Something went wrong</h3>
+                  <p className="text-red-700 mb-6">We couldn't send your message. Please try again later.</p>
+                  <button 
+                    onClick={() => setFormState('idle')}
+                    className="px-6 py-2 bg-red-600 text-white rounded-lg font-medium hover:bg-red-700 transition-colors"
+                  >
+                    Try Again
+                  </button>
+                </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
@@ -125,6 +163,7 @@ export function Contact() {
                       <input 
                         type="text" 
                         id="name" 
+                        name="name"
                         required
                         className="w-full h-12 px-4 rounded-lg bg-blue-50 border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all"
                         placeholder="John Doe"
@@ -135,6 +174,7 @@ export function Contact() {
                       <input 
                         type="email" 
                         id="email" 
+                        name="email"
                         required
                         className="w-full h-12 px-4 rounded-lg bg-blue-50 border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all"
                         placeholder="john@example.com"
@@ -148,6 +188,7 @@ export function Contact() {
                       <input 
                         type="tel" 
                         id="phone" 
+                        name="phone"
                         required
                         className="w-full h-12 px-4 rounded-lg bg-blue-50 border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all"
                         placeholder="+92 300 0000000"
@@ -157,6 +198,7 @@ export function Contact() {
                       <label htmlFor="service" className="text-sm font-semibold text-blue-950">Interested Service</label>
                       <select 
                         id="service"
+                        name="service"
                         className="w-full h-12 px-4 rounded-lg bg-blue-50 border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all text-gray-700"
                       >
                         <option value="">Select a service</option>
@@ -173,6 +215,7 @@ export function Contact() {
                     <label htmlFor="message" className="text-sm font-semibold text-blue-950">Project Details *</label>
                     <textarea 
                       id="message" 
+                      name="message"
                       required
                       rows={5}
                       className="w-full p-4 rounded-lg bg-blue-50 border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all resize-none"
