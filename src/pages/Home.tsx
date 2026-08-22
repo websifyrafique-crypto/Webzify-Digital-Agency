@@ -280,44 +280,6 @@ export function Home() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-
-                {/* Floating Card 1 */}
-                <motion.div 
-                  animate={{ y: [0, -10, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute -left-4 md:-left-12 top-8 md:top-16 bg-white p-3 pr-8 rounded-full shadow-2xl border border-gray-50 z-20 flex items-center gap-4"
-                >
-                  <div className="w-12 h-12 rounded-full bg-rose-500 flex items-center justify-center shadow-lg shadow-rose-500/30">
-                    <BarChart3 className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-2xl font-black text-blue-950 leading-none mb-1">120%</p>
-                    <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Engagement</p>
-                  </div>
-                </motion.div>
-
-                {/* Floating Card 2 */}
-                <motion.div 
-                  animate={{ y: [0, 10, 0] }}
-                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                  className="absolute -left-2 md:-left-6 bottom-4 md:-bottom-8 bg-white p-5 rounded-2xl shadow-2xl border border-gray-50 z-20 w-[220px]"
-                >
-                  <div className="flex justify-between items-start mb-4">
-                    <p className="text-xs font-bold text-gray-800 leading-tight">Increase<br/>Sales</p>
-                    <p className="text-xs font-bold text-teal-500">+65,4%</p>
-                  </div>
-                  <svg viewBox="0 0 100 40" className="w-full h-14 overflow-visible">
-                    <path d="M0,35 Q10,30 20,35 T40,25 T60,28 T80,15 T100,5" fill="none" stroke="#14b8a6" strokeWidth="2.5" strokeLinecap="round" />
-                    <circle cx="100" cy="5" r="3.5" fill="#14b8a6" />
-                    <path d="M0,35 Q10,30 20,35 T40,25 T60,28 T80,15 T100,5 L100,40 L0,40 Z" fill="url(#grad)" opacity="0.2" />
-                    <defs>
-                      <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stopColor="#14b8a6" stopOpacity="1" />
-                        <stop offset="100%" stopColor="#14b8a6" stopOpacity="0" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </motion.div>
               </div>
             </motion.div>
           </div>
