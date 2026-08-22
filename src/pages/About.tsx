@@ -13,7 +13,7 @@ export function About() {
       />
       
       {/* Hero Section */}
-      <section className="bg-blue-900 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
+      <section className="bg-blue-600 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute -top-1/2 -right-1/4 w-[800px] h-[800px] rounded-full bg-blue-600/10 blur-[100px]" />
         </div>
@@ -23,13 +23,13 @@ export function About() {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight"
           >
-            About <span className="text-primary-500">Webzify</span>
+            About <span className="text-blue-200">Webzify</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto"
+            className="text-xl text-blue-50 leading-relaxed max-w-2xl mx-auto"
           >
             We are a team of digital strategists, designers, developers, and marketers committed to creating practical, high-performance digital solutions.
           </motion.p>

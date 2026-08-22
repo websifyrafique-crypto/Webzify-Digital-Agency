@@ -46,22 +46,22 @@ export function WebDev() {
       />
 
       {/* Hero Section */}
-      <section className="relative pt-20 pb-24 md:pt-28 md:pb-32 bg-blue-900 text-white overflow-hidden">
+      <section className="relative pt-20 pb-24 md:pt-28 md:pb-32 bg-blue-600 text-white overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-5"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
             >
-              Advanced <span className="text-blue-600">Website Development</span> Services
+              Advanced <span className="text-white">Website Development</span> Services
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-xl text-gray-600 mb-8"
+              className="text-xl text-white mb-8"
             >
               Move beyond basic templates. We engineer powerful, secure, and scalable custom web architectures that drive operational efficiency and business growth.
             </motion.p>

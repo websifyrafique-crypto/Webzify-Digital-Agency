@@ -46,22 +46,22 @@ export function Seo() {
       />
 
       {/* Hero Section */}
-      <section className="relative pt-20 pb-24 md:pt-28 md:pb-32 bg-blue-900 text-white overflow-hidden">
+      <section className="relative pt-20 pb-24 md:pt-28 md:pb-32 bg-blue-600 text-white overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
             >
-              Data-Driven <span className="text-primary-400">SEO Services</span>
+              Data-Driven <span className="text-white">SEO Services</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-xl text-gray-300 mb-8"
+              className="text-xl text-white mb-8"
             >
               Stop hiding on the second page. Dominate search engine rankings, attract high-intent organic traffic, and multiply your revenue with our proven SEO strategies.
             </motion.p>

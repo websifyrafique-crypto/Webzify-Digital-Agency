@@ -26,20 +26,20 @@ export function Contact() {
       />
       
       {/* Hero Section */}
-      <section className="bg-blue-900 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
+      <section className="bg-blue-600 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center max-w-4xl">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight"
           >
-            Let's Talk About <span className="text-primary-500">Your Project</span>
+            Let's Talk About <span className="text-blue-200">Your Project</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto"
+            className="text-xl text-blue-50 leading-relaxed max-w-2xl mx-auto"
           >
             Have a website, e-commerce or SEO project in mind? Contact Webzify and let's discuss how we can help.
           </motion.p>
@@ -48,7 +48,7 @@ export function Contact() {
 
       {/* Contact Content */}
       <section className="py-24 bg-slate-50 relative">
-        <div className="absolute top-0 left-0 w-full h-1/2 bg-blue-900" />
+        <div className="absolute top-0 left-0 w-full h-1/2 bg-blue-600" />
         
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-5xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col lg:flex-row">
@@ -60,14 +60,14 @@ export function Contact() {
               
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold mb-8">Contact Information</h2>
-                <p className="text-gray-300 mb-12">
+                <p className="text-blue-50 mb-12">
                   Fill out the form and our team will get back to you within 24 hours to discuss your digital needs.
                 </p>
                 
                 <div className="space-y-8">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
-                      <Phone className="w-5 h-5 text-primary-400" />
+                      <Phone className="w-5 h-5 text-blue-200" />
                     </div>
                     <div>
                       <p className="text-sm text-gray-400 font-medium mb-1">Phone</p>
@@ -77,7 +77,7 @@ export function Contact() {
                   
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
-                      <Mail className="w-5 h-5 text-primary-400" />
+                      <Mail className="w-5 h-5 text-blue-200" />
                     </div>
                     <div>
                       <p className="text-sm text-gray-400 font-medium mb-1">Email</p>
@@ -87,7 +87,7 @@ export function Contact() {
                   
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
-                      <MapPin className="w-5 h-5 text-primary-400" />
+                      <MapPin className="w-5 h-5 text-blue-200" />
                     </div>
                     <div>
                       <p className="text-sm text-gray-400 font-medium mb-1">Office</p>
@@ -198,7 +198,7 @@ export function Contact() {
       <section className="h-[400px] w-full bg-blue-200">
         <iframe 
           title="Webzify Office Location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m2!1s0x3919048a1d0dbec1%3A0x6a0ed7d976e5d8a9!2sHall%20Rd%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1689363000000!5m2!1sen!2s" 
+          src="https://maps.google.com/maps?q=Hall%20Road,%20Lahore,%20Pakistan&t=&z=14&ie=UTF8&iwloc=&output=embed"
           width="100%" 
           height="100%" 
           style={{ border: 0 }} 

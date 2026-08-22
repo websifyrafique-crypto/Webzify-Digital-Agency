@@ -14,7 +14,7 @@ export function Services() {
       />
       
       {/* Hero Section */}
-      <section className="bg-blue-900 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
+      <section className="bg-blue-600 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-blue-600/10 blur-[100px]" />
           <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full bg-primary-500/10 blur-[100px]" />
@@ -25,13 +25,13 @@ export function Services() {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight"
           >
-            Digital Services That Help Your <span className="text-primary-500">Business Move Forward</span>
+            Digital Services That Help Your <span className="text-blue-200">Business Move Forward</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto"
+            className="text-xl text-blue-50 leading-relaxed max-w-2xl mx-auto"
           >
             From high-converting website designs to robust technical SEO, we provide the end-to-end services required for sustainable digital success.
           </motion.p>

@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, BarChart3, Code2, MonitorPlay, Search, TrendingUp, CheckCircle2, Calendar, Clock } from 'lucide-react';
+import { ArrowRight, BarChart3, Code2, MonitorPlay, Search, TrendingUp, CheckCircle2, Calendar, Clock, Play } from 'lucide-react';
 import { motion } from 'motion/react';
 import { SEO } from '../components/SEO';
 import { Testimonials } from '../components/Testimonials';
 import { CtaSection } from '../components/CtaSection';
 import { services } from '../data/services';
 import { blogPosts } from '../data/blog';
+import heroImage from '../assets/images/professional_working_laptop_1787420542150.jpg';
 
 export function Home() {
   return (
@@ -16,85 +17,101 @@ export function Home() {
       />
       
       {/* Hero Section */}
-      <section className="relative pt-20 pb-32 lg:pt-32 lg:pb-40 overflow-hidden bg-blue-600">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="max-w-2xl"
-            >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 leading-[1.1]">
-                Build Your Digital Presence. <br className="hidden lg:block" />
-                <span className="text-blue-200">Grow Your Business.</span>
-              </h1>
-              <p className="text-lg md:text-xl text-blue-50 mb-8 leading-relaxed max-w-xl">
-                Webzify helps businesses build powerful websites, launch high-performing e-commerce stores, develop modern web solutions, and improve their online visibility with strategic SEO.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  to="/contact"
-                  className="inline-flex h-14 items-center justify-center rounded-lg bg-white px-8 text-base font-semibold text-blue-600 transition-all hover:bg-blue-50 hover:shadow-lg hover:shadow-blue-900/20"
-                >
-                  Get a Free Quote
-                </Link>
-                <Link
-                  to="/services"
-                  className="inline-flex h-14 items-center justify-center rounded-lg border-2 border-blue-400 bg-blue-700/50 backdrop-blur-sm px-8 text-base font-semibold text-white transition-colors hover:border-blue-300 hover:bg-blue-700"
-                >
-                  Explore Our Services
-                </Link>
-              </div>
-            </motion.div>
+      <section className="relative pt-24 pb-0 lg:pt-32 bg-blue-600 overflow-hidden">
+        <div className="container mx-auto px-4 md:px-6 relative z-10 pb-32 lg:pb-48">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             
+            {/* Left Column: Image */}
+            <motion.div 
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="relative w-full max-w-lg mx-auto lg:max-w-none order-2 lg:order-1"
+            >
+              <div className="relative z-10 rounded-full overflow-hidden aspect-square max-w-[450px] mx-auto border-8 border-blue-500/30 shadow-2xl">
+                <img 
+                  src={heroImage} 
+                  alt="Professional Digital Agency Expert" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* Decorative background circle */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-400/20 rounded-full blur-3xl -z-10"></div>
+              
+              {/* Floating badges */}
+              <motion.div 
+                animate={{ y: [0, -10, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute top-1/4 -left-4 md:-left-12 bg-white/90 backdrop-blur p-4 rounded-xl shadow-xl border border-white z-20"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+                    <TrendingUp className="text-blue-600 w-5 h-5" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 font-medium">Growth Rate</p>
+                    <p className="text-sm font-bold text-blue-950">+150%</p>
+                  </div>
+                </div>
+              </motion.div>
+            </motion.div>
+
+            {/* Right Column: Text */}
             <motion.div 
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative lg:ml-auto w-full max-w-lg lg:max-w-none mx-auto"
+              transition={{ duration: 0.6 }}
+              className="max-w-2xl order-1 lg:order-2 text-center lg:text-left"
             >
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-white border border-gray-100 p-2">
-                <img 
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200" 
-                  alt="Web Development and Digital Marketing Dashboard" 
-                  className="w-full h-auto rounded-xl object-cover"
-                />
-                
-                {/* Floating Elements */}
-                <motion.div 
-                  animate={{ y: [0, -10, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute -left-6 top-1/4 bg-white/80 backdrop-blur p-4 rounded-xl shadow-xl border border-white hidden md:block"
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.15]">
+                Website Designing <br className="hidden md:block" />
+                <span className="text-blue-200">Company in Pakistan</span>
+              </h1>
+              <p className="text-lg md:text-xl text-blue-50 mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                Webzify is a leading website designing & development company in Pakistan specialized in web development, web design, digital marketing, logo design, e-commerce, and graphic design.
+              </p>
+              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
+                <Link
+                  to="/contact"
+                  className="inline-flex h-14 items-center justify-center rounded-full bg-blue-900 px-8 text-sm md:text-base font-bold tracking-wide text-white transition-all hover:bg-blue-950 shadow-xl shadow-blue-900/30 uppercase"
                 >
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
-                      <TrendingUp className="text-blue-600 w-5 h-5" />
-                    </div>
-                    <div>
-                      <p className="text-xs text-gray-500 font-medium">Traffic Growth</p>
-                      <p className="text-sm font-bold text-blue-950">+124.5%</p>
-                    </div>
+                  Contact Us
+                </Link>
+                <button className="group flex items-center gap-4 text-white font-semibold hover:text-blue-200 transition-colors uppercase text-sm md:text-base tracking-wide">
+                  <div className="w-14 h-14 rounded-full border-2 border-white/50 flex items-center justify-center group-hover:border-blue-200 transition-colors bg-white/10 backdrop-blur-sm">
+                    <Play className="w-5 h-5 ml-1" fill="currentColor" />
                   </div>
-                </motion.div>
-
-                <motion.div 
-                  animate={{ y: [0, 10, 0] }}
-                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                  className="absolute -right-6 bottom-1/4 bg-white/80 backdrop-blur p-4 rounded-xl shadow-xl border border-white hidden md:block"
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
-                      <Code2 className="text-blue-600 w-5 h-5" />
-                    </div>
-                    <div>
-                      <p className="text-xs text-gray-500 font-medium">Clean Code</p>
-                      <p className="text-sm font-bold text-blue-950">Optimized</p>
-                    </div>
-                  </div>
-                </motion.div>
+                  How We Work !
+                </button>
               </div>
             </motion.div>
+          </div>
+        </div>
+
+        {/* Convex Curved Bottom */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-0">
+          <svg viewBox="0 0 1440 200" className="w-full h-[100px] md:h-[150px] lg:h-[200px]" preserveAspectRatio="none">
+            <path fill="#172554" d="M0,200 C480,0 960,0 1440,200 Z"></path>
+          </svg>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="bg-blue-950 pb-16 pt-8 relative z-20">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-4 text-center divide-y md:divide-y-0 md:divide-x divide-blue-800/50">
+            <div className="py-2 md:py-4">
+              <div className="text-4xl md:text-5xl lg:text-6xl font-black text-blue-400 mb-3">49k+</div>
+              <div className="text-sm md:text-base tracking-widest font-bold text-white uppercase">Project Done</div>
+            </div>
+            <div className="py-6 md:py-4">
+              <div className="text-4xl md:text-5xl lg:text-6xl font-black text-blue-400 mb-3">38k+</div>
+              <div className="text-sm md:text-base tracking-widest font-bold text-white uppercase">Happy Clients</div>
+            </div>
+            <div className="py-6 md:py-4">
+              <div className="text-4xl md:text-5xl lg:text-6xl font-black text-blue-400 mb-3">4.7</div>
+              <div className="text-sm md:text-base tracking-widest font-bold text-white uppercase">Client Rating</div>
+            </div>
           </div>
         </div>
       </section>

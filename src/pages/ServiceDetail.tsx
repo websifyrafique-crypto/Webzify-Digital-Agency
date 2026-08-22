@@ -21,7 +21,7 @@ export function ServiceDetail() {
       />
       
       {/* Hero Section */}
-      <section className="bg-blue-900 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
+      <section className="bg-blue-600 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
         <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
           <img src={service.image} alt="Background" className="w-full h-full object-cover mix-blend-overlay" />
         </div>
@@ -31,7 +31,7 @@ export function ServiceDetail() {
             animate={{ opacity: 1, scale: 1 }}
             className="w-20 h-20 rounded-2xl bg-blue-600/20 backdrop-blur-md flex items-center justify-center mx-auto mb-8 border border-primary-500/30"
           >
-            <service.icon className="w-10 h-10 text-primary-400" />
+            <service.icon className="w-10 h-10 text-blue-200" />
           </motion.div>
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ export function ServiceDetail() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto"
+            className="text-xl text-blue-50 leading-relaxed max-w-2xl mx-auto"
           >
             {service.description}
           </motion.p>
