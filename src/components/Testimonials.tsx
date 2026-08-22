@@ -10,6 +10,7 @@ export function Testimonials() {
       author: "Sarah Jenkins",
       role: "Technical Director at TechFlow Solutions",
       rating: 5,
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200"
     },
     {
       id: 2,
@@ -17,6 +18,7 @@ export function Testimonials() {
       author: "Marcus Chen",
       role: "CEO of Horizon Logistics",
       rating: 5,
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&h=200"
     },
     {
       id: 3,
@@ -24,6 +26,7 @@ export function Testimonials() {
       author: "Elena Rodriguez",
       role: "Head of Digital at Artisan Goods",
       rating: 5,
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200"
     }
   ];
 
@@ -69,9 +72,16 @@ export function Testimonials() {
               <p className="text-gray-700 leading-relaxed mb-8 relative z-10 italic">
                 "{testimonial.content}"
               </p>
-              <div className="relative z-10">
-                <h4 className="font-bold text-gray-900">{testimonial.author}</h4>
-                <p className="text-sm text-gray-500">{testimonial.role}</p>
+              <div className="relative z-10 flex items-center gap-4">
+                <img 
+                  src={testimonial.image} 
+                  alt={testimonial.author} 
+                  className="w-14 h-14 rounded-full object-cover shadow-sm border-2 border-white"
+                />
+                <div>
+                  <h4 className="font-bold text-gray-900">{testimonial.author}</h4>
+                  <p className="text-sm text-gray-500">{testimonial.role}</p>
+                </div>
               </div>
             </motion.div>
           ))}
