@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { MapPin, Phone, Mail, CheckCircle2, AlertCircle } from 'lucide-react';
 import { SEO } from '../components/SEO';
+import { Breadcrumbs } from '../components/Breadcrumbs';
+
 
 export function Contact() {
   const [formState, setFormState] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
@@ -46,6 +48,7 @@ export function Contact() {
       {/* Hero Section */}
       <section className="bg-blue-600 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center max-w-4xl">
+          <Breadcrumbs items={[{ label: 'Contact Us' }]} className="justify-center" />
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

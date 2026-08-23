@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import { SEO } from '../components/SEO';
+import { Breadcrumbs } from '../components/Breadcrumbs';
+
 import { CtaSection } from '../components/CtaSection';
 import { blogPosts } from '../data/blog';
 
@@ -19,6 +21,7 @@ export function Blog() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-blue-600/10 blur-[100px]" />
         </div>
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center max-w-4xl">
+          <Breadcrumbs items={[{ label: 'Blog' }]} className="justify-center" />
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

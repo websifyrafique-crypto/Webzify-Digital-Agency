@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { SEO } from '../components/SEO';
+import { Breadcrumbs } from '../components/Breadcrumbs';
+
 import { CtaSection } from '../components/CtaSection';
 import { services } from '../data/services';
 
@@ -20,6 +22,7 @@ export function Services() {
           <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full bg-primary-500/10 blur-[100px]" />
         </div>
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center max-w-4xl">
+          <Breadcrumbs items={[{ label: 'Services' }]} className="justify-center" />
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

@@ -2,6 +2,8 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Calendar, Clock, User, ArrowLeft, Facebook, Twitter, Linkedin } from 'lucide-react';
 import { SEO } from '../components/SEO';
+import { Breadcrumbs } from '../components/Breadcrumbs';
+
 import { CtaSection } from '../components/CtaSection';
 import { blogPosts } from '../data/blog';
 
@@ -24,7 +26,10 @@ export function BlogDetail() {
       <article className="pt-8 pb-24 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <Link to="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-blue-600 mb-8 transition-colors">
+                        <div className="-mt-4 mb-4">
+              <Breadcrumbs items={[{ label: 'Blog', path: '/blog' }, { label: post.title }]} className="!text-gray-500 [&_a]:!text-gray-500 hover:[&_a]:!text-blue-600 [&_span.text-white]:!text-gray-900" />
+            </div>
+<Link to="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-blue-600 mb-8 transition-colors">
               <ArrowLeft className="w-4 h-4" /> Back to Blog
             </Link>
             

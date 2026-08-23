@@ -1,6 +1,8 @@
 import { motion } from 'motion/react';
 import { Target, Lightbulb, Users, CheckCircle2 } from 'lucide-react';
 import { SEO } from '../components/SEO';
+import { Breadcrumbs } from '../components/Breadcrumbs';
+
 import { Testimonials } from '../components/Testimonials';
 import { CtaSection } from '../components/CtaSection';
 
@@ -18,6 +20,7 @@ export function About() {
           <div className="absolute -top-1/2 -right-1/4 w-[800px] h-[800px] rounded-full bg-blue-600/10 blur-[100px]" />
         </div>
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center max-w-4xl">
+          <Breadcrumbs items={[{ label: 'About Us' }]} className="justify-center" />
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
