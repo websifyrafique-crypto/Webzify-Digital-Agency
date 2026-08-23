@@ -8,9 +8,9 @@ interface SEOProps {
   image?: string;
 }
 
-export function SEO({ title, description, canonical, type = 'website', image = 'https://webzify.com/og-image.jpg' }: SEOProps) {
+export function SEO({ title, description, canonical, type = 'website', image = 'https://webzify-digital-agency.vercel.app/og-image.jpg' }: SEOProps) {
   // Determine canonical URL
-  const siteUrl = 'https://webzify.com';
+  const siteUrl = 'https://webzify-digital-agency.vercel.app';
   const isBrowser = typeof window !== 'undefined';
   const path = isBrowser ? window.location.pathname : '';
   const canonicalUrl = canonical || `${siteUrl}${path}`;
