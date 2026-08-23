@@ -14,13 +14,13 @@ export const blogPosts = [
       <p>As we navigate through 2026, the shift towards a digital-first economy is more pronounced than ever. Consumers turn to search engines and websites before making almost any purchasing decision. If your business isn't there, you're essentially invisible to a vast segment of your target audience.</p>
       
       <h2>Building Trust and Credibility</h2>
-      <p>A professional website acts as your 24/7 digital storefront. It's often the first point of contact between your business and potential customers. A well-designed, fast, and responsive website instantly builds trust and credibility. Conversely, a poorly designed site—or worse, no site at all—can drive prospects straight to your competitors.</p>
+      <p>A <a href='/services/website-designing' class='text-blue-600 hover:underline'>professional website</a> acts as your 24/7 digital storefront. It's often the first point of contact between your business and potential customers. A well-designed, fast, and responsive website instantly builds trust and credibility. Conversely, a poorly designed site—or worse, no site at all—can drive prospects straight to your competitors.</p>
 
       <h2>Controlling Your Narrative</h2>
       <p>While social media profiles are important, you don't own them. Algorithms change, and platforms evolve. Your website is the only digital real estate you truly control. It allows you to present your brand narrative exactly how you want it, without external interference.</p>
 
       <h2>Conclusion</h2>
-      <p>Investing in a professional website is investing in the long-term success and scalability of your business. It's the foundational element of any effective digital marketing strategy.</p>
+      <p>Investing in a professional website is investing in the long-term success and scalability of your business. It's the foundational element of any effective <a href='/services' class='text-blue-600 hover:underline'>digital marketing strategy</a>.</p>
     `
   },
   {
@@ -31,7 +31,7 @@ export const blogPosts = [
     author: "Webzify Team",
     date: "August 02, 2026",
     readingTime: "4 min read",
-    excerpt: "Stay ahead of the curve with these emerging website design trends that focus on user experience, accessibility, and modern aesthetics.",
+    excerpt: "Stay ahead of the curve with these emerging <a href='/services/website-designing' class='text-blue-600 hover:underline'>website design trends</a> that focus on user experience, accessibility, and modern aesthetics.",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800",
     content: `
       <h2>Minimalism Meets Micro-Interactions</h2>
@@ -52,7 +52,7 @@ export const blogPosts = [
     author: "Webzify Team",
     date: "July 28, 2026",
     readingTime: "6 min read",
-    excerpt: "Search Engine Optimization is the most cost-effective way to drive sustainable, high-quality traffic to your small business. Learn how it works.",
+    excerpt: "<a href='/services/seo-services' class='text-blue-600 hover:underline'>Search Engine Optimization</a> is the most cost-effective way to drive sustainable, high-quality traffic to your small business. Learn how it works.",
     image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=800",
     content: `
       <h2>Leveling the Playing Field</h2>
@@ -62,7 +62,7 @@ export const blogPosts = [
       <p>Unlike paid advertising, where traffic stops the moment you stop paying, SEO provides long-term, compounding results. Once you establish strong rankings, you continue to receive organic traffic month after month.</p>
       
       <h2>The Importance of Local SEO</h2>
-      <p>For small businesses serving specific geographic areas, Local SEO is critical. Optimizing your Google Business Profile and local citations ensures you appear in the "Local Pack" when nearby customers search for what you offer.</p>
+      <p>For small businesses serving specific geographic areas, <a href='/services/seo-services' class='text-blue-600 hover:underline'>Local SEO</a> is critical. Optimizing your Google Business Profile and local citations ensures you appear in the "Local Pack" when nearby customers search for what you offer.</p>
     `
   },
   {
@@ -73,7 +73,7 @@ export const blogPosts = [
     author: "Webzify Team",
     date: "July 15, 2026",
     readingTime: "5 min read",
-    excerpt: "Traffic means nothing without conversions. Discover the key elements that turn your e-commerce visitors into paying customers.",
+    excerpt: "Traffic means nothing without conversions. Discover the key elements that turn your <a href='/services/e-commerce-website' class='text-blue-600 hover:underline'>e-commerce visitors</a> into paying customers.",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800",
     content: `
       <h2>Frictionless Checkout</h2>
@@ -94,7 +94,7 @@ export const blogPosts = [
     author: "Webzify Team",
     date: "June 30, 2026",
     readingTime: "4 min read",
-    excerpt: "A slow website costs you customers and search rankings. Understand why performance is a critical business metric, not just a technical detail.",
+    excerpt: "A slow website costs you customers. Our <a href='/services/website-development' class='text-blue-600 hover:underline'>website development</a> focuses on performance. and search rankings. Understand why performance is a critical business metric, not just a technical detail.",
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=800",
     content: `
       <h2>The Cost of Milliseconds</h2>

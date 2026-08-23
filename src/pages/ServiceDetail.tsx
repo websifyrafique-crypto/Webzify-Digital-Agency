@@ -21,6 +21,18 @@ export function ServiceDetail() {
         title={`${service.title} | Webzify`}
         description={service.description}
       />
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": service.title,
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Webzify"
+          },
+          "description": service.description
+        })}
+      </script>
       
       {/* Hero Section */}
       <section className="bg-blue-600 text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">

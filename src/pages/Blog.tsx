@@ -54,7 +54,7 @@ export function Blog() {
                 className="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col group hover:shadow-xl transition-shadow"
               >
                 <Link to={`/blog/${post.slug}`} className="block relative aspect-[16/9] overflow-hidden">
-                  <img 
+                  <img loading="lazy" 
                     src={post.image} 
                     alt={post.title} 
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

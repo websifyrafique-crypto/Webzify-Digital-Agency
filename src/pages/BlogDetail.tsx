@@ -22,6 +22,28 @@ export function BlogDetail() {
         description={post.excerpt}
         type="article"
       />
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": post.title,
+          "image": [post.image],
+          "datePublished": post.date,
+          "dateModified": post.date,
+          "author": [{
+              "@type": "Person",
+              "name": post.author
+          }],
+          "publisher": {
+            "@type": "Organization",
+            "name": "Webzify",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://webzify-digital-agency.vercel.app/logo.png"
+            }
+          }
+        })}
+      </script>
       
       <article className="pt-8 pb-24 bg-white">
         <div className="container mx-auto px-4 md:px-6">

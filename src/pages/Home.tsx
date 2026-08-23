@@ -16,6 +16,7 @@ export function Home() {
         title="Web Design & Digital Marketing Agency in Lahore | Webzify"
         description="Professional website design, web development, e-commerce and SEO services in Lahore. Webzify helps businesses build a strong online presence."
       />
+      <script type="application/ld+json">{JSON.stringify({"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Webzify", "image": "https://webzify-digital-agency.vercel.app/logo.png", "url": "https://webzify-digital-agency.vercel.app", "telephone": "+923000000000", "address": {"@type": "PostalAddress", "streetAddress": "Lahore", "addressLocality": "Lahore", "addressRegion": "Punjab", "addressCountry": "PK"}, "description": "Professional website design, web development, e-commerce and SEO services in Lahore. Webzify helps businesses build a strong online presence.", "sameAs": ["https://facebook.com/webzify", "https://instagram.com/webzify", "https://linkedin.com/company/webzify"]})}</script>
       
       {/* Hero Section */}
       <section className="relative pt-24 pb-0 lg:pt-32 bg-blue-600 overflow-hidden">
@@ -425,9 +426,9 @@ export function Home() {
                   </div>
                   
                   <Link to={`/blog/${post.slug}`} className="block mb-4 group-hover:text-blue-600 transition-colors">
-                    <h2 className="text-xl font-bold text-blue-950 line-clamp-2 leading-tight">
+                    <h3 className="text-xl font-bold text-blue-950 line-clamp-2 leading-tight">
                       {post.title}
-                    </h2>
+                    </h3>
                   </Link>
                   
                   <p className="text-gray-600 line-clamp-3 mb-6 flex-1">

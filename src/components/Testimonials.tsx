@@ -73,7 +73,7 @@ export function Testimonials() {
                 "{testimonial.content}"
               </p>
               <div className="relative z-10 flex items-center gap-4">
-                <img 
+                <img loading="lazy" 
                   src={testimonial.image} 
                   alt={testimonial.author} 
                   className="w-14 h-14 rounded-full object-cover shadow-sm border-2 border-white"
