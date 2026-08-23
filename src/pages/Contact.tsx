@@ -10,29 +10,28 @@ export function Contact() {
     e.preventDefault();
     setFormState('submitting');
     
-    const formData = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
     
     try {
-      // Replace YOUR_FORMBOLD_ENDPOINT with your actual Formbold form endpoint URL
-      const formboldEndpoint = import.meta.env.VITE_FORMBOLD_ENDPOINT || 'https://formbold.com/s/FORM_ID';
-      
-      const response = await fetch(formboldEndpoint, {
+      const response = await fetch('https://formspree.io/f/xrpzvzal', {
         method: 'POST',
         body: formData,
         headers: {
           Accept: 'application/json',
         },
       });
-        
-      if (!response.ok) {
+
+      if (response.ok) {
+        setFormState('success');
+        form.reset();
+        // Reset after 5 seconds
+        setTimeout(() => setFormState('idle'), 5000);
+      } else {
         throw new Error('Form submission failed');
       }
-      
-      setFormState('success');
-      // Reset after 5 seconds
-      setTimeout(() => setFormState('idle'), 5000);
-    } catch (err) {
-      console.error('Error saving contact:', err);
+    } catch (error) {
+      console.error('Error submitting form:', error);
       setFormState('error');
     }
   };
