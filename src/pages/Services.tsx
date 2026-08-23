@@ -11,8 +11,8 @@ export function Services() {
   return (
     <>
       <SEO 
-        title="Our Services | Webzify"
-        description="Explore Webzify's professional digital services including Website Designing, E-Commerce Development, Custom Web Development, and SEO Services."
+        title="Web Design, SEO & Digital Marketing Services | Webzify"
+        description="Explore Webzify services including website design, web development, e-commerce websites, SEO and digital marketing solutions."
       />
       
       {/* Hero Section */}

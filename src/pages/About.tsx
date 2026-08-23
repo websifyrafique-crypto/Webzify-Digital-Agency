@@ -10,8 +10,8 @@ export function About() {
   return (
     <>
       <SEO 
-        title="About Webzify"
-        description="Learn about Webzify, a premier Digital Marketing and Web Development Agency in Lahore, dedicated to building powerful digital solutions for businesses."
+        title="About Webzify | Digital Marketing & Web Design Agency"
+        description="Learn about Webzify, our web design, development, SEO and digital marketing expertise and how we help businesses grow online."
       />
       
       {/* Hero Section */}

@@ -13,8 +13,8 @@ export function Home() {
   return (
     <>
       <SEO 
-        title="Webzify | Digital Marketing & Web Development Agency in Lahore"
-        description="Webzify helps businesses build powerful websites, launch high-performing e-commerce stores, develop modern web solutions, and improve online visibility with SEO."
+        title="Web Design & Digital Marketing Agency in Lahore | Webzify"
+        description="Professional website design, web development, e-commerce and SEO services in Lahore. Webzify helps businesses build a strong online presence."
       />
       
       {/* Hero Section */}

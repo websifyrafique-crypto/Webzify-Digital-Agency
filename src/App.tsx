@@ -16,6 +16,7 @@ import { Seo } from './pages/services/Seo';
 import { Blog } from './pages/Blog';
 import { BlogDetail } from './pages/BlogDetail';
 import { Contact } from './pages/Contact';
+import { NotFound } from './pages/NotFound';
 
 export default function App() {
   return (
@@ -32,6 +33,7 @@ export default function App() {
         <Route path="blog" element={<Blog />} />
         <Route path="blog/:slug" element={<BlogDetail />} />
         <Route path="contact" element={<Contact />} />
+      <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );

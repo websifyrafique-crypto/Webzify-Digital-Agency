@@ -41,8 +41,8 @@ export function Contact() {
   return (
     <>
       <SEO 
-        title="Contact Us | Webzify"
-        description="Have a website, e-commerce or SEO project in mind? Contact Webzify and let's discuss how we can help your business grow online."
+        title="Contact Webzify | Web Design & SEO Agency in Lahore"
+        description="Contact Webzify for professional website design, development, e-commerce and SEO services for your business."
       />
       
       {/* Hero Section */}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://webzify.com/sitemap.xml
