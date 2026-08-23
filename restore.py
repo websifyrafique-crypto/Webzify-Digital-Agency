@@ -1,4 +1,6 @@
-import { Link } from 'react-router-dom';
+import sys
+
+content = """import { Link } from 'react-router-dom';
 import { ArrowRight, BarChart3, Code2, MonitorPlay, Search, TrendingUp, CheckCircle2, Calendar, Clock, Play } from 'lucide-react';
 import { motion } from 'motion/react';
 import { SEO } from '../components/SEO';
@@ -457,3 +459,8 @@ export function Home() {
     </>
   );
 }
+"""
+
+with open("src/pages/Home.tsx", "w") as f:
+    f.write(content)
+print("Restored with correct layout.")
