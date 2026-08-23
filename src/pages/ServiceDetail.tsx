@@ -28,6 +28,7 @@ export function ServiceDetail() {
           <img src={service.image} alt="Background" className="w-full h-full object-cover mix-blend-overlay" />
         </div>
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center max-w-4xl">
+          <Breadcrumbs items={[{ label: 'Services', path: '/services' }, { label: service.title }]} className="justify-center" />
           <motion.div 
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
