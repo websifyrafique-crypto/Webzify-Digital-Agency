@@ -172,7 +172,7 @@ export function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="group rounded-2xl bg-white border border-blue-100 overflow-hidden hover:bg-blue-600 transition-all shadow-sm hover:shadow-lg"
+                className="group rounded-2xl bg-white border border-blue-100 overflow-hidden hover:bg-blue-600 transition-all duration-300 hover:-translate-y-2 shadow-sm hover:shadow-xl"
               >
                 <div className="p-8">
                   <service.icon className="w-10 h-10 text-blue-600 group-hover:text-white mb-6 transition-colors" />

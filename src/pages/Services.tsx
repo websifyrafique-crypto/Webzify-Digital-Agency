@@ -51,11 +51,11 @@ export function Services() {
                 transition={{ duration: 0.6 }}
                 className={`grid lg:grid-cols-2 gap-12 lg:gap-16 items-center ${index % 2 !== 0 ? 'lg:rtl' : ''}`}
               >
-                <div className={`relative rounded-2xl overflow-hidden shadow-xl ${index % 2 !== 0 ? 'lg:col-start-2 lg:row-start-1' : ''}`}>
+                <div className={`group relative rounded-2xl overflow-hidden shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ${index % 2 !== 0 ? 'lg:col-start-2 lg:row-start-1' : ''}`}>
                   <img 
                     src={service.image} 
                     alt={service.title} 
-                    className="w-full h-auto object-cover aspect-[4/3]"
+                    className="w-full h-auto object-cover aspect-[4/3] transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-900/60 to-transparent" />
                   <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg flex items-center gap-4">
